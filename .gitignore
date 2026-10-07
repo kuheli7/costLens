@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.hypothesis/
+*.duckdb
+*.sqlite
+*.db
+build/
+dist/
+node_modules/
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfvars
+.env
