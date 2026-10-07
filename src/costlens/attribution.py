@@ -17,6 +17,10 @@ from .money import allocate_rounded, round_half_up
 
 Key = tuple[str, str, str, str, str, str]  # CostRow.key
 
+# A second cause is reported only if it carries at least this share of its parent's change;
+# smaller movements are indistinguishable from day-to-day noise.
+EXTRA_CAUSE_SHARE = 0.15
+
 
 @dataclass(frozen=True, slots=True)
 class Cell:
@@ -212,10 +216,20 @@ class _Candidate:
     values: tuple[str, ...]
     covered: float
     surprise: float
+    # Every value worth reporting: the minimal explaining set plus any other value above
+    # `min_share`, so a second real cause is not dropped just because the first one already
+    # explains most of the change.
+    listed: tuple[str, ...] = ()
 
 
 def _best_dimension(
-    before: Table, after: Table, dims: Sequence[str], total: int, explain: float, max_values: int
+    before: Table,
+    after: Table,
+    dims: Sequence[str],
+    total: int,
+    explain: float,
+    max_values: int,
+    extra_share: float = 0.0,
 ) -> _Candidate | None:
     """Pick the dimension where the fewest values explain the most of the change."""
     if total == 0:
@@ -245,7 +259,13 @@ def _best_dimension(
             )
             for c in chosen
         )
-        cand = _Candidate(dim, tuple(c.value for c in chosen), covered, surprise)
+        chosen_values = {c.value for c in chosen}
+        listed = tuple(
+            c.value
+            for c in pool[:max_values]
+            if c.value in chosen_values or c.delta_cents / total >= extra_share
+        )
+        cand = _Candidate(dim, tuple(c.value for c in chosen), covered, surprise, listed)
         if best is None or _better(cand, best, explain):
             best = cand
     return best
@@ -328,11 +348,13 @@ def _expand(
     # instead of adding a child, so the tree only branches where the change really splits.
     while True:
         free = [d for d in dims if d not in node.scope]
-        cand = _best_dimension(before, after, free, node.delta_cents, explain, max_values)
+        cand = _best_dimension(
+            before, after, free, node.delta_cents, explain, max_values, EXTRA_CAUSE_SHARE
+        )
         if cand is None:
             return
-        if len(cand.values) == 1:
-            scope = {**node.scope, cand.dim: cand.values[0]}
+        if len(cand.listed) == 1:
+            scope = {**node.scope, cand.dim: cand.listed[0]}
             sb, sa = _filter(before, scope), _filter(after, scope)
             if round_half_up(_sum_cost(sa) - _sum_cost(sb)) == node.delta_cents:
                 narrowed = _make_node(sb, sa, scope, node.delta_cents, overall)
@@ -344,7 +366,7 @@ def _expand(
     if depth >= max_depth:
         return
     node.spread = cand.dim == "resource_id" and cand.covered < explain
-    for value in cand.values:
+    for value in cand.listed:
         sub_scope = {**node.scope, cand.dim: value}
         sb, sa = _filter(before, sub_scope), _filter(after, sub_scope)
         delta = round_half_up(_sum_cost(sa) - _sum_cost(sb))

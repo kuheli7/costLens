@@ -10,6 +10,7 @@ Prices are rough and only need to be self-consistent; they are not a price list.
 
 from __future__ import annotations
 
+import math
 import random
 from collections.abc import Sequence
 from dataclasses import dataclass, field
@@ -94,9 +95,7 @@ def _weekday_factor(d: date) -> float:
     return {5: 0.7, 6: 0.55}.get(d.weekday(), 1.0)
 
 
-def _base_rows(
-    d: date, acct: _Account, rng: random.Random, noise: float = 0.03
-) -> list[CostRow]:
+def _base_rows(d: date, acct: _Account, rng: random.Random, noise: float = 0.03) -> list[CostRow]:
     wf = _weekday_factor(d)
 
     def noisy(x: float) -> float:
@@ -162,7 +161,7 @@ def _inject(
                 )
 
     if kind == "asg_scale_out":
-        new_ids = [f"i-{_hex(rng)}" for _ in range(max(1, round(5 * scale)))]
+        new_ids = [f"i-{_hex(rng)}" for _ in range(max(1, math.ceil(5 * scale)))]
         for d in days:
             for nid in new_ids:
                 add(d, _row(d, EC2, "BoxUsage:m5.large", nid, 24, 10.0, asg=ASG_NAME))
@@ -179,7 +178,12 @@ def _inject(
     elif kind == "nat_traffic":
         for d in days:
             wf = _weekday_factor(d)
-            add(d, _row(d, EC2, "NatGateway-Bytes", NAT_ID, 150 * wf * 2 * scale, 5.6, team="platform"))
+            add(
+                d,
+                _row(
+                    d, EC2, "NatGateway-Bytes", NAT_ID, 150 * wf * 2 * scale, 5.6, team="platform"
+                ),
+            )
             # same key as the base row: the table builder merges them, tripling the traffic
         expected = {"service": EC2, "resource_id": NAT_ID, "usage_type": "NatGateway-Bytes"}
         driver, actor, event_name = "volume", None, None
@@ -189,7 +193,13 @@ def _inject(
             for i, r in enumerate(rows_by_day[d]):
                 if r.resource_id == RDS_ID:
                     rows_by_day[d][i] = _row(
-                        d, RDS, r.usage_type, RDS_ID, r.usage_qty, 38.0 * (1 + 1.5 * scale), team="data"
+                        d,
+                        RDS,
+                        r.usage_type,
+                        RDS_ID,
+                        r.usage_qty,
+                        38.0 * (1 + 1.5 * scale),
+                        team="data",
                     )
         expected = {"service": RDS, "resource_id": RDS_ID}
         driver, actor, event_name = "rate", None, None
@@ -197,7 +207,10 @@ def _inject(
     elif kind == "new_service":
         domain = "arn:aws:es:ap-south-1:123456789012:domain/search-prod"
         for d in days:
-            add(d, _row(d, OPENSEARCH, "ESInstance:r5.large", domain, 48 * scale, 14.0, team="search"))
+            add(
+                d,
+                _row(d, OPENSEARCH, "ESInstance:r5.large", domain, 96 * scale, 14.0, team="search"),
+            )
         expected = {"service": OPENSEARCH}
         driver, actor, event_name = "volume", "carol", "CreateElasticsearchDomain"
         res = [{"ResourceType": "AWS::Elasticsearch::Domain", "ResourceName": domain}]
@@ -205,7 +218,18 @@ def _inject(
         victim = acct.asg_instances[0]
         for d in days:
             wf = _weekday_factor(d)
-            add(d, _row(d, EC2, "DataTransfer-Out-Bytes", victim, 20 * wf * 14 * scale, 9.0, asg=ASG_NAME))
+            add(
+                d,
+                _row(
+                    d,
+                    EC2,
+                    "DataTransfer-Out-Bytes",
+                    victim,
+                    20 * wf * 14 * scale,
+                    9.0,
+                    asg=ASG_NAME,
+                ),
+            )
         expected = {"service": EC2, "usage_type": "DataTransfer-Out-Bytes", "resource_id": victim}
         driver, actor, event_name = "volume", None, None
         res = []
