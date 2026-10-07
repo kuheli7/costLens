@@ -65,7 +65,18 @@ def _waste_lines(facts: dict[str, Any]) -> list[str]:
     return lines
 
 
-def render_digest(facts: dict[str, Any], exp: Explanation) -> str:
+def alert_note(status: dict[str, Any] | None) -> str | None:
+    """One line saying an alert is paused and by whom, or None when it is live."""
+    if not status:
+        return None
+    if status["status"] == "snoozed" and status.get("until"):
+        return (
+            f"Alert snoozed by {status['by']} until {status['until'][:16].replace('T', ' ')} UTC."
+        )
+    return f"Alert acknowledged by {status['by']}; no repeat alerts today."
+
+
+def render_digest(facts: dict[str, Any], exp: Explanation, note: str | None = None) -> str:
     """Plain-text digest. Figures come from the fact sheet; sentences from the explanation."""
     lines = [_top_line(facts), "", exp.headline, ""]
     by_id = {c["id"]: c for c in facts["causes"]}
@@ -81,13 +92,24 @@ def render_digest(facts: dict[str, Any], exp: Explanation) -> str:
     lines.extend(_waste_lines(facts))
     lines.append("")
     lines.append(exp.confidence_note)
+    if note:
+        lines.append(note)
     return "\n".join(lines).strip()
 
 
 def build_blocks(
-    facts: dict[str, Any], exp: Explanation, alert_key: str, details_url: str | None = None
+    facts: dict[str, Any],
+    exp: Explanation,
+    alert_key: str,
+    details_url: str | None = None,
+    note: str | None = None,
 ) -> list[dict[str, Any]]:
-    """Slack Block Kit message with Acknowledge and Snooze buttons."""
+    """Slack Block Kit message.
+
+    Acknowledge and Snooze buttons appear only while there is a live alert to act on: a
+    significant change that nobody has acknowledged or snoozed. Once someone has, the message
+    says so instead of offering the buttons again; on a quiet day there is nothing to act on.
+    """
 
     def section(text: str) -> dict[str, Any]:
         return {"type": "section", "text": {"type": "mrkdwn", "text": text[:MAX_SECTION_CHARS]}}
@@ -109,13 +131,14 @@ def build_blocks(
     if extras:
         blocks.append({"type": "divider"})
         blocks.append(section("\n".join(escape(x) for x in extras)))
-    context = [exp.confidence_note, *facts["warnings"]]
+    context = [exp.confidence_note, *facts["warnings"], *([note] if note else [])]
     blocks.append(
         {
             "type": "context",
             "elements": [{"type": "mrkdwn", "text": escape(t)[:300]} for t in context if t][:10],
         }
     )
+    live_alert = facts["significant_change"] and not note
     buttons: list[dict[str, Any]] = [
         {
             "type": "button",
@@ -131,6 +154,8 @@ def build_blocks(
             "value": alert_key,
         },
     ]
+    if not live_alert:
+        buttons = []
     if details_url:
         buttons.append(
             {
@@ -140,7 +165,8 @@ def build_blocks(
                 "action_id": "costlens_details",
             }
         )
-    blocks.append({"type": "actions", "elements": buttons})
+    if buttons:
+        blocks.append({"type": "actions", "elements": buttons})
     return blocks
 
 

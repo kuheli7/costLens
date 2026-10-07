@@ -49,6 +49,12 @@ STOPWORDS_AFTER_BY = frozenset(
 )
 
 
+def _norm_time(t: str) -> str:
+    """'2:14' and '02:14' are the same time."""
+    h, m = t.split(":")
+    return f"{int(h):02d}:{m}"
+
+
 def _to_decimal(s: str) -> Decimal | None:
     try:
         return Decimal(s.replace(",", ""))
@@ -85,11 +91,15 @@ class Allowed:
                 self.dates.add(m)
             remaining = _ISO_DATE.sub(" ", remaining)
             for m in _TIME.findall(remaining):
-                self.times.add(m)
+                self.times.add(_norm_time(m))
             remaining = _TIME.sub(" ", remaining)
             for tok in _IDENT.findall(remaining):
                 if _is_identifier(tok):
                     self.idents.add(tok.lower())
+                    # "BoxUsage:m5.large" may also be quoted as just "m5.large"
+                    for part in re.split(r"[:/]", tok):
+                        if part and _is_identifier(part):
+                            self.idents.add(part.lower())
                     remaining = remaining.replace(tok, " ")
             for n in _NUMBER.findall(remaining):
                 d = _to_decimal(n)
@@ -128,7 +138,7 @@ def validate_text(text: str, allowed: Allowed) -> list[str]:
     remaining = _ISO_DATE.sub(" ", remaining)
 
     for t in _TIME.findall(remaining):
-        if t not in allowed.times:
+        if _norm_time(t) not in allowed.times:
             problems.append(f"time not in facts: {t}")
     remaining = _TIME.sub(" ", remaining)
 

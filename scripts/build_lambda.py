@@ -36,7 +36,7 @@ def main() -> int:
     if PKG.exists():
         shutil.rmtree(PKG)
     PKG.mkdir(parents=True)
-    deps = ["duckdb>=1.0"] + (["anthropic>=0.40"] if args.with_ai else [])
+    deps = ["duckdb>=1.0"] + (["anthropic>=1.0"] if args.with_ai else [])
     subprocess.run(
         [
             sys.executable, "-m", "pip", "install", "--quiet", "--target", str(PKG),

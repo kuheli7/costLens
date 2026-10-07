@@ -170,6 +170,16 @@ def analyze_day(
     pct = None if before_total == 0 else float(Fraction(delta) / before_total)
 
     anomalies = find_anomalies(rows, day, cfg)
+    # A day CUR may still revise (under 72 hours old) is usually *incomplete*, not cheap: the
+    # digest runs the morning after, before every hour of yesterday has been delivered. A drop
+    # on such a day is far more likely missing data than real savings, so decreases are held back
+    # until the day is final. Increases are still reported, flagged as possibly revised.
+    prov = provisional_warning(day, now)
+    held_decreases = 0
+    if prov:
+        kept = [a for a in anomalies if a.delta_cents > 0]
+        held_decreases = len(anomalies) - len(kept)
+        anomalies = kept
     significant = bool(anomalies)
 
     causes: list[CauseReport] = []
@@ -219,9 +229,15 @@ def analyze_day(
         recon = reconcile(sum(r.cost_cents for r in day_rows), ce_total_cents)
         if not recon.ok and recon.message:
             warnings.append(recon.message)
-    prov = provisional_warning(day, now)
-    if prov:
-        warnings.append(prov)
+    if prov and significant:
+        warnings.append(
+            "this day is still provisional: the figures may be revised for up to 72 hours"
+        )
+    if held_decreases:
+        warnings.append(
+            "a drop in spend was not reported because this day's data is still incomplete; "
+            "it will be checked again once the day is final"
+        )
     fees = sum(r.cost_cents for r in day_rows if r.line_type == "Fee")
     if fees:
         warnings.append("monthly fee lines are excluded from the comparison")

@@ -236,9 +236,15 @@ def digest(
         )
 
     writer = deps.writer
+    ai_warning = None
     if writer is None and cfg.ai and deps.secrets is not None and llm_secret_id:
-        os.environ["ANTHROPIC_API_KEY"] = _secret(deps, llm_secret_id)["api_key"]
-        writer = AnthropicWriter()
+        try:
+            os.environ["ANTHROPIC_API_KEY"] = _secret(deps, llm_secret_id)["api_key"]
+            writer = AnthropicWriter()
+        except Exception as exc:  # missing SDK, empty or malformed secret, no permission ...
+            # Turning AI on must never take the digest down: use the template writer and say why.
+            writer = None
+            ai_warning = f"AI unavailable ({type(exc).__name__}); the template writer was used"
     budget = TokenBudget(cfg.token_budget) if writer else None
 
     own_state = state is None
@@ -278,6 +284,8 @@ def digest(
         "significant": result.report.significant,
         "is_alert": result.is_alert,
         "source": result.explanation.source,
+        "fallback_reason": result.explanation.fallback_reason,
+        "ai_warning": ai_warning,
         "findings": len(findings),
     }
 

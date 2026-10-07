@@ -112,7 +112,7 @@ means something else), so cause sentences also come from structured per-cause fi
 
 ```bash
 python -m venv .venv && .venv/bin/pip install -e ".[dev]"     # Windows: .venv\Scripts\pip
-pytest                                   # 214 tests: engine, waste rules (moto), handlers, API, Slack
+pytest                                   # 237 tests: engine, waste rules (moto), handlers, API, Slack
 python -m costlens.evaluate              # the evaluation above, about 10 seconds
 python scripts/export_demo.py            # synthetic demo data for the dashboard
 cd dashboard && npm install && npm run dev

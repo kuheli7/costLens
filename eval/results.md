@@ -70,4 +70,4 @@ Noise 8% day-to-day, incident size x0.5, 120 injected incidents scored; 0 more w
 
 None.
 
-Run time: 9.6 s.
+Run time: 9.9 s.

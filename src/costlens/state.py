@@ -185,6 +185,13 @@ class State:
             return now.date() > datetime.fromisoformat(a["updated_at"]).date()
         return True
 
+    def alert_status(self, key: str, now: datetime) -> dict[str, Any] | None:
+        """Who paused this alert and until when, or None if it is live."""
+        a = self.alert(key)
+        if not a or self.should_alert(key, now):
+            return None
+        return {"status": a["status"], "by": a["updated_by"], "until": a["snooze_until"]}
+
     # ------------------------------------------------------------------ waste findings
 
     def record_findings(self, findings: Iterable[Finding], today: date) -> None:

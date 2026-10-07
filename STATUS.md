@@ -2,7 +2,7 @@
 
 Written at the end of an unattended build session. Read this before trusting anything.
 
-## Done and tested (214 tests pass: `pytest -o addopts=""`)
+## Done and tested (237 tests pass: `pytest -o addopts=""`)
 
 | Area | What exists | How it was verified |
 |---|---|---|
@@ -49,6 +49,39 @@ Written at the end of an unattended build session. Read this before trusting any
    real-incident results yet.
 10. No Adtributor citation is made anywhere; the dimension-selection idea is described on its own
     terms (fewest values explaining most of the change, with a distribution-shift score).
+
+## Behaviour you should know about
+
+- **Incomplete days.** The digest runs at 03:30 UTC for yesterday, before CUR has delivered every
+  hour of it, and a partial day looks like a large drop. Policy: while a day is under 72 hours old,
+  **decreases are not reported** (the digest says the drop was held until the day is final);
+  **increases are reported** with a "may still be revised" note. A quiet provisional day carries no
+  warning. Tested with a day scaled to 60% completeness (`tests/test_provisional.py`). Trade-off: a
+  real saving is reported up to three days late.
+- **Acknowledge and Snooze change the next message.** While an alert is live the digest has the two
+  buttons; once someone acknowledges or snoozes, the message says who and until when and drops the
+  buttons; a quiet day has no buttons (`tests/test_alert_visibility.py`). Alerts are keyed by the
+  service behind the biggest cause, so snoozing EC2 does not silence RDS.
+- **Turning AI on cannot take the digest down.** A missing SDK in the package, an empty or malformed
+  `llm` secret, or any API error falls back to the template writer and the result reports
+  `ai_warning` / `fallback_reason` (`tests/test_handlers_ai.py`).
+- **The validator accepts ordinary phrasing** (`m5.large` on its own, `2:14` for `02:14`, "96
+  percent", "6 October") and still rejects invented numbers, times, dates, IDs and names. It has not
+  been tried against a real model's phrasing; `python -m costlens.writer_eval --live` does that over
+  33 fact sheets and reports first-try, retry and fallback counts. **It has never been run live**
+  (needs an API key and spends money); `--dry-run` only checks the wiring.
+- **Lambda Function URL for Slack.** The Terraform provider documentation states that with
+  `authorization_type = "NONE"` it adds the public-invoke permissions itself, so no extra
+  `aws_lambda_permission` is declared. That is from the docs, not from a live deploy; if Slack gets
+  a 403, this is the first place to look.
+
+## Not built
+
+- The API and dashboard are **not deployed**, and nothing connects the S3-synced SQLite state to the
+  API. The dashboard runs against the bundled synthetic demo data (or a local API).
+- No drill-down-by-dimension view in the dashboard (the engine has it; the digest shows the result).
+- Alerting is daily only: there are no intra-day or threshold alerts between digests.
+- Fix pull requests, deploy correlation, forecasting, multi-account support, question answering.
 
 ## Things only you can do
 

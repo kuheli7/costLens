@@ -12,7 +12,7 @@ from .baseline import DEFAULT_CONFIG, AnomalyConfig
 from .explain import Explanation, TokenBudget, Writer, explain
 from .models import CostRow
 from .report import DayReport, analyze_day
-from .slack import build_blocks, render_digest
+from .slack import alert_note, build_blocks, render_digest
 from .state import State
 from .waste.rules import Finding
 
@@ -26,6 +26,7 @@ class RunResult:
     blocks: list[dict[str, Any]]
     alert_key: str
     is_alert: bool  # a significant change that has not been acknowledged or snoozed
+    note: str | None = None  # why the alert is paused, when it is
 
 
 def alert_key_for(report: DayReport) -> str:
@@ -55,14 +56,17 @@ def run_day(
     )
     facts = factsheet.build(report)
     exp = explain(facts, writer, cache=cache, budget=budget)
-    digest = render_digest(facts, exp)
     key = alert_key_for(report)
-    is_alert = report.significant and (state is None or state.should_alert(key, now or _now()))
-    blocks = build_blocks(facts, exp, key, details_url)
+    when = now or _now()
+    status = state.alert_status(key, when) if state is not None and report.significant else None
+    is_alert = report.significant and status is None
+    note = alert_note(status)
+    digest = render_digest(facts, exp, note)
+    blocks = build_blocks(facts, exp, key, details_url, note)
     if state is not None:
         state.save_day(report, facts, exp, digest, now)
         state.record_findings(waste, day)
-    return RunResult(report, facts, exp, digest, blocks, key, is_alert)
+    return RunResult(report, facts, exp, digest, blocks, key, is_alert, note)
 
 
 def _now() -> datetime:
