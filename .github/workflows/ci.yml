@@ -7,13 +7,13 @@ on:
 
 jobs:
   python:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     strategy:
       matrix:
         python-version: ["3.11", "3.12"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python-version }}
           cache: pip
@@ -25,13 +25,13 @@ jobs:
         run: python -m costlens.evaluate --seeds 3 --quiet-seeds 3 --out eval-ci/results.md
 
   terraform:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: terraform
     steps:
-      - uses: actions/checkout@v4
-      - uses: hashicorp/setup-terraform@v3
+      - uses: actions/checkout@v7
+      - uses: hashicorp/setup-terraform@v4
         with:
           terraform_version: 1.9.8
       - run: terraform fmt -check
@@ -40,13 +40,13 @@ jobs:
       # `terraform plan` needs AWS credentials, so it is not run in CI. Run it locally before apply.
 
   dashboard:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     defaults:
       run:
         working-directory: dashboard
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
