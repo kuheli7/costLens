@@ -1,0 +1,139 @@
+{
+  "tiers": {
+    "standard": {
+      "incidents": 120,
+      "below_floor": 0,
+      "detected": 120,
+      "cause_correct": 120,
+      "driver_correct": [
+        120,
+        120
+      ],
+      "amount_correct": 120,
+      "actor_correct": 120,
+      "additive": 120,
+      "digests_faithful": 120,
+      "tamper_caught": [
+        720,
+        720
+      ],
+      "by_kind": {
+        "asg_scale_out": {
+          "n": 20,
+          "cause_correct": 20,
+          "detected": 20
+        },
+        "new_big_instance": {
+          "n": 20,
+          "cause_correct": 20,
+          "detected": 20
+        },
+        "nat_traffic": {
+          "n": 20,
+          "cause_correct": 20,
+          "detected": 20
+        },
+        "rate_change": {
+          "n": 20,
+          "cause_correct": 20,
+          "detected": 20
+        },
+        "new_service": {
+          "n": 20,
+          "cause_correct": 20,
+          "detected": 20
+        },
+        "transfer_spike": {
+          "n": 20,
+          "cause_correct": 20,
+          "detected": 20
+        }
+      },
+      "misses": []
+    },
+    "hard": {
+      "incidents": 120,
+      "below_floor": 0,
+      "detected": 120,
+      "cause_correct": 120,
+      "driver_correct": [
+        120,
+        120
+      ],
+      "amount_correct": 96,
+      "actor_correct": 120,
+      "additive": 120,
+      "digests_faithful": 120,
+      "tamper_caught": [
+        720,
+        720
+      ],
+      "by_kind": {
+        "asg_scale_out": {
+          "n": 20,
+          "cause_correct": 20,
+          "detected": 20
+        },
+        "new_big_instance": {
+          "n": 20,
+          "cause_correct": 20,
+          "detected": 20
+        },
+        "nat_traffic": {
+          "n": 20,
+          "cause_correct": 20,
+          "detected": 20
+        },
+        "rate_change": {
+          "n": 20,
+          "cause_correct": 20,
+          "detected": 20
+        },
+        "new_service": {
+          "n": 20,
+          "cause_correct": 20,
+          "detected": 20
+        },
+        "transfer_spike": {
+          "n": 20,
+          "cause_correct": 20,
+          "detected": 20
+        }
+      },
+      "misses": []
+    }
+  },
+  "tier_config": {
+    "standard": {
+      "noise": 0.03,
+      "scale": 1.0
+    },
+    "hard": {
+      "noise": 0.08,
+      "scale": 0.5
+    }
+  },
+  "pairs": {
+    "standard": {
+      "n": 30,
+      "both": 30,
+      "larger_first": 30
+    },
+    "hard": {
+      "n": 30,
+      "both": 30,
+      "larger_first": 20
+    }
+  },
+  "quiet": {
+    "0.03": [
+      0,
+      300
+    ],
+    "0.08": [
+      0,
+      300
+    ]
+  },
+  "seconds": 9.6
+}
