@@ -32,6 +32,9 @@ class AnomalyConfig:
     mad_floor_cents: float = 25.0  # ... or 25 cents
 
 
+DEFAULT_CONFIG = AnomalyConfig()
+
+
 @dataclass(frozen=True, slots=True)
 class Baseline:
     expected_cents: float
@@ -60,7 +63,7 @@ def series_by(rows: Sequence[CostRow], dim: str) -> dict[str, dict[date, int]]:
 
 
 def compute_baseline(
-    series: dict[date, int], day: date, cfg: AnomalyConfig = AnomalyConfig()
+    series: dict[date, int], day: date, cfg: AnomalyConfig = DEFAULT_CONFIG
 ) -> Baseline | None:
     """Baseline for `day` from the days before it. None if there is no history at all."""
     history = [d for d in series if d < day]
@@ -108,7 +111,7 @@ class Anomaly:
 
 
 def check_day(
-    subject: str, series: dict[date, int], day: date, cfg: AnomalyConfig = AnomalyConfig()
+    subject: str, series: dict[date, int], day: date, cfg: AnomalyConfig = DEFAULT_CONFIG
 ) -> Anomaly | None:
     """Return an Anomaly if `day` is out of range for this series, else None."""
     base = compute_baseline(series, day, cfg)
@@ -127,7 +130,7 @@ def check_day(
 
 
 def find_anomalies(
-    rows: Sequence[CostRow], day: date, cfg: AnomalyConfig = AnomalyConfig()
+    rows: Sequence[CostRow], day: date, cfg: AnomalyConfig = DEFAULT_CONFIG
 ) -> list[Anomaly]:
     """Anomalies for the total and for each service on `day`, biggest first."""
     out: list[Anomaly] = []
