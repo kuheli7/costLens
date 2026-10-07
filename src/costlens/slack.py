@@ -48,10 +48,9 @@ def _untagged_line(facts: dict[str, Any]) -> str | None:
     u = facts["untagged"]
     if u["amount"] == "$0.00":
         return None
-    return (
-        f"Untagged spend: {u['amount']} ({u['share']}), "
-        f"{u['resource_count']} resources missing the team tag"
-    )
+    n = u["resource_count"]
+    noun = "resource" if n == 1 else "resources"
+    return f"Untagged spend: {u['amount']} ({u['share']}), {n} {noun} missing the team tag"
 
 
 def _waste_lines(facts: dict[str, Any]) -> list[str]:

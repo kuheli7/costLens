@@ -45,7 +45,9 @@ def main() -> int:
         ],
         check=True,
     )  # fmt: skip
-    shutil.copytree(ROOT / "src" / "costlens", PKG / "costlens", ignore=shutil.ignore_patterns("__pycache__"))
+    shutil.copytree(
+        ROOT / "src" / "costlens", PKG / "costlens", ignore=shutil.ignore_patterns("__pycache__")
+    )
 
     if ZIP.exists():
         ZIP.unlink()
@@ -58,7 +60,9 @@ def main() -> int:
     zipped_mb, unzipped_mb = ZIP.stat().st_size / 1e6, unzipped / 1e6
     print(f"{ZIP.relative_to(ROOT)}: {zipped_mb:.1f} MB zipped, {unzipped_mb:.1f} MB unzipped")
     if zipped_mb > ZIPPED_LIMIT_MB or unzipped_mb > UNZIPPED_LIMIT_MB:
-        print("WARNING: over Lambda's direct-upload limit; use S3 upload or a layer", file=sys.stderr)
+        print(
+            "WARNING: over Lambda's direct-upload limit; use S3 upload or a layer", file=sys.stderr
+        )
         return 1
     return 0
 

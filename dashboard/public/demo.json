@@ -1,0 +1,2531 @@
+{
+ "synthetic": true,
+ "days": [
+  {
+   "day": "2026-10-06",
+   "total_cents": 5593,
+   "baseline_cents": 4348,
+   "delta_cents": 1245,
+   "pct": 0.28633854645814166,
+   "significant": true,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-10-05",
+   "total_cents": 5523,
+   "baseline_cents": 4339,
+   "delta_cents": 1184,
+   "pct": 0.27284249337481276,
+   "significant": true,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-10-04",
+   "total_cents": 4884,
+   "baseline_cents": 3675,
+   "delta_cents": 1209,
+   "pct": 0.3289348387974425,
+   "significant": true,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-10-03",
+   "total_cents": 5064,
+   "baseline_cents": 3879,
+   "delta_cents": 1185,
+   "pct": 0.30549110595514306,
+   "significant": true,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-10-02",
+   "total_cents": 4337,
+   "baseline_cents": 4346,
+   "delta_cents": -9,
+   "pct": -0.0020708697653014268,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-10-01",
+   "total_cents": 4403,
+   "baseline_cents": 4353,
+   "delta_cents": 50,
+   "pct": 0.011485012059262662,
+   "significant": false,
+   "warnings": [
+    "monthly fee lines are excluded from the comparison"
+   ],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-30",
+   "total_cents": 4358,
+   "baseline_cents": 4352,
+   "delta_cents": 6,
+   "pct": 0.0013785180930499712,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-29",
+   "total_cents": 4340,
+   "baseline_cents": 4357,
+   "delta_cents": -17,
+   "pct": -0.0039022150809135776,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-28",
+   "total_cents": 4335,
+   "baseline_cents": 4337,
+   "delta_cents": -2,
+   "pct": -0.00046120142972443215,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-27",
+   "total_cents": 3676,
+   "baseline_cents": 3673,
+   "delta_cents": 3,
+   "pct": 0.0008167710318540703,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-26",
+   "total_cents": 3845,
+   "baseline_cents": 3889,
+   "delta_cents": -44,
+   "pct": -0.011315417256011316,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-25",
+   "total_cents": 4334,
+   "baseline_cents": 4362,
+   "delta_cents": -28,
+   "pct": -0.006419809698498223,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-24",
+   "total_cents": 4315,
+   "baseline_cents": 4370,
+   "delta_cents": -55,
+   "pct": -0.012585812356979404,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-23",
+   "total_cents": 4356,
+   "baseline_cents": 4360,
+   "delta_cents": -4,
+   "pct": -0.0009174311926605505,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-22",
+   "total_cents": 4359,
+   "baseline_cents": 4349,
+   "delta_cents": 10,
+   "pct": 0.0022991148407862975,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-21",
+   "total_cents": 4354,
+   "baseline_cents": 4335,
+   "delta_cents": 19,
+   "pct": 0.00438242417252912,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-20",
+   "total_cents": 3690,
+   "baseline_cents": 3668,
+   "delta_cents": 22,
+   "pct": 0.005997001499250375,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-19",
+   "total_cents": 3886,
+   "baseline_cents": 3884,
+   "delta_cents": 2,
+   "pct": 0.0005149330587023687,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-18",
+   "total_cents": 4294,
+   "baseline_cents": 4362,
+   "delta_cents": -68,
+   "pct": -0.015590966410638542,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-17",
+   "total_cents": 4379,
+   "baseline_cents": 4355,
+   "delta_cents": 24,
+   "pct": 0.005510907003444317,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-16",
+   "total_cents": 4385,
+   "baseline_cents": 4353,
+   "delta_cents": 32,
+   "pct": 0.007351252010107972,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-15",
+   "total_cents": 4352,
+   "baseline_cents": 4343,
+   "delta_cents": 9,
+   "pct": 0.002072061701392886,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-14",
+   "total_cents": 4324,
+   "baseline_cents": 4351,
+   "delta_cents": -27,
+   "pct": -0.0062061831973336395,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-13",
+   "total_cents": 3677,
+   "baseline_cents": 3663,
+   "delta_cents": 14,
+   "pct": 0.0038214821891633683,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-12",
+   "total_cents": 3874,
+   "baseline_cents": 3890,
+   "delta_cents": -16,
+   "pct": -0.004113110539845758,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-11",
+   "total_cents": 4370,
+   "baseline_cents": 4362,
+   "delta_cents": 8,
+   "pct": 0.0018340210912425492,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-10",
+   "total_cents": 4322,
+   "baseline_cents": 4361,
+   "delta_cents": -39,
+   "pct": -0.008943928448572412,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-09",
+   "total_cents": 4334,
+   "baseline_cents": 4351,
+   "delta_cents": -17,
+   "pct": -0.0039075968279508105,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-08",
+   "total_cents": 4253,
+   "baseline_cents": 4341,
+   "delta_cents": -88,
+   "pct": -0.0202718267680258,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  },
+  {
+   "day": "2026-09-07",
+   "total_cents": 4364,
+   "baseline_cents": 4349,
+   "delta_cents": 15,
+   "pct": 0.0034490687514371118,
+   "significant": false,
+   "warnings": [],
+   "updated_at": "2026-12-01T00:00:00+00:00"
+  }
+ ],
+ "trend": [
+  {
+   "day": "2026-09-07",
+   "total_cents": 4364,
+   "baseline_cents": 4349,
+   "significant": false
+  },
+  {
+   "day": "2026-09-08",
+   "total_cents": 4253,
+   "baseline_cents": 4341,
+   "significant": false
+  },
+  {
+   "day": "2026-09-09",
+   "total_cents": 4334,
+   "baseline_cents": 4351,
+   "significant": false
+  },
+  {
+   "day": "2026-09-10",
+   "total_cents": 4322,
+   "baseline_cents": 4361,
+   "significant": false
+  },
+  {
+   "day": "2026-09-11",
+   "total_cents": 4370,
+   "baseline_cents": 4362,
+   "significant": false
+  },
+  {
+   "day": "2026-09-12",
+   "total_cents": 3874,
+   "baseline_cents": 3890,
+   "significant": false
+  },
+  {
+   "day": "2026-09-13",
+   "total_cents": 3677,
+   "baseline_cents": 3663,
+   "significant": false
+  },
+  {
+   "day": "2026-09-14",
+   "total_cents": 4324,
+   "baseline_cents": 4351,
+   "significant": false
+  },
+  {
+   "day": "2026-09-15",
+   "total_cents": 4352,
+   "baseline_cents": 4343,
+   "significant": false
+  },
+  {
+   "day": "2026-09-16",
+   "total_cents": 4385,
+   "baseline_cents": 4353,
+   "significant": false
+  },
+  {
+   "day": "2026-09-17",
+   "total_cents": 4379,
+   "baseline_cents": 4355,
+   "significant": false
+  },
+  {
+   "day": "2026-09-18",
+   "total_cents": 4294,
+   "baseline_cents": 4362,
+   "significant": false
+  },
+  {
+   "day": "2026-09-19",
+   "total_cents": 3886,
+   "baseline_cents": 3884,
+   "significant": false
+  },
+  {
+   "day": "2026-09-20",
+   "total_cents": 3690,
+   "baseline_cents": 3668,
+   "significant": false
+  },
+  {
+   "day": "2026-09-21",
+   "total_cents": 4354,
+   "baseline_cents": 4335,
+   "significant": false
+  },
+  {
+   "day": "2026-09-22",
+   "total_cents": 4359,
+   "baseline_cents": 4349,
+   "significant": false
+  },
+  {
+   "day": "2026-09-23",
+   "total_cents": 4356,
+   "baseline_cents": 4360,
+   "significant": false
+  },
+  {
+   "day": "2026-09-24",
+   "total_cents": 4315,
+   "baseline_cents": 4370,
+   "significant": false
+  },
+  {
+   "day": "2026-09-25",
+   "total_cents": 4334,
+   "baseline_cents": 4362,
+   "significant": false
+  },
+  {
+   "day": "2026-09-26",
+   "total_cents": 3845,
+   "baseline_cents": 3889,
+   "significant": false
+  },
+  {
+   "day": "2026-09-27",
+   "total_cents": 3676,
+   "baseline_cents": 3673,
+   "significant": false
+  },
+  {
+   "day": "2026-09-28",
+   "total_cents": 4335,
+   "baseline_cents": 4337,
+   "significant": false
+  },
+  {
+   "day": "2026-09-29",
+   "total_cents": 4340,
+   "baseline_cents": 4357,
+   "significant": false
+  },
+  {
+   "day": "2026-09-30",
+   "total_cents": 4358,
+   "baseline_cents": 4352,
+   "significant": false
+  },
+  {
+   "day": "2026-10-01",
+   "total_cents": 4403,
+   "baseline_cents": 4353,
+   "significant": false
+  },
+  {
+   "day": "2026-10-02",
+   "total_cents": 4337,
+   "baseline_cents": 4346,
+   "significant": false
+  },
+  {
+   "day": "2026-10-03",
+   "total_cents": 5064,
+   "baseline_cents": 3879,
+   "significant": true
+  },
+  {
+   "day": "2026-10-04",
+   "total_cents": 4884,
+   "baseline_cents": 3675,
+   "significant": true
+  },
+  {
+   "day": "2026-10-05",
+   "total_cents": 5523,
+   "baseline_cents": 4339,
+   "significant": true
+  },
+  {
+   "day": "2026-10-06",
+   "total_cents": 5593,
+   "baseline_cents": 4348,
+   "significant": true
+  }
+ ],
+ "explanations": [
+  {
+   "day": "2026-10-06",
+   "source": "template",
+   "facts_hash": "ef088d00e248efbd",
+   "headline": "Spend on Tuesday 06 October 2026 was $55.93, up $12.45 (29%) from the usual $43.48.",
+   "digest_text": "AWS spend Tuesday 06 October 2026: $55.93 (+$12.45, up 29% vs usual $43.48)\n\nSpend on Tuesday 06 October 2026 was $55.93, up $12.45 (29%) from the usual $43.48.\n\n1. +$12.00 - AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend added $12.00 (96% of the change). UpdateAutoScalingGroup by deploy-bot at 02:14 UTC (exact resource match).\n   Fix: Check why the group scaled out and whether its scale-in policy and cooldown let it shrink.\n\nUntagged spend: $1.99 (4%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nAll causes matched a CloudTrail event."
+  },
+  {
+   "day": "2026-10-05",
+   "source": "template",
+   "facts_hash": "b523e776df088ae2",
+   "headline": "Spend on Monday 05 October 2026 was $55.23, up $11.84 (27%) from the usual $43.39.",
+   "digest_text": "AWS spend Monday 05 October 2026: $55.23 (+$11.84, up 27% vs usual $43.39)\n\nSpend on Monday 05 October 2026 was $55.23, up $11.84 (27%) from the usual $43.39.\n\n1. +$12.00 - AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend added $12.00 (101% of the change). UpdateAutoScalingGroup by deploy-bot at 02:14 UTC (exact resource match).\n   Fix: Check why the group scaled out and whether its scale-in policy and cooldown let it shrink.\n\nUntagged spend: $1.99 (4%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nAll causes matched a CloudTrail event."
+  },
+  {
+   "day": "2026-10-04",
+   "source": "template",
+   "facts_hash": "1169751a01d5cc31",
+   "headline": "Spend on Sunday 04 October 2026 was $48.84, up $12.09 (33%) from the usual $36.75.",
+   "digest_text": "AWS spend Sunday 04 October 2026: $48.84 (+$12.09, up 33% vs usual $36.75)\n\nSpend on Sunday 04 October 2026 was $48.84, up $12.09 (33%) from the usual $36.75.\n\n1. +$12.00 - AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend added $12.00 (99% of the change). UpdateAutoScalingGroup by deploy-bot at 02:14 UTC (exact resource match).\n   Fix: Check why the group scaled out and whether its scale-in policy and cooldown let it shrink.\n\nUntagged spend: $1.99 (4%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nAll causes matched a CloudTrail event."
+  },
+  {
+   "day": "2026-10-03",
+   "source": "template",
+   "facts_hash": "4990cb4916bcdb50",
+   "headline": "Spend on Saturday 03 October 2026 was $50.64, up $11.85 (31%) from the usual $38.79.",
+   "digest_text": "AWS spend Saturday 03 October 2026: $50.64 (+$11.85, up 31% vs usual $38.79)\n\nSpend on Saturday 03 October 2026 was $50.64, up $11.85 (31%) from the usual $38.79.\n\n1. +$12.00 - AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend added $12.00 (101% of the change). UpdateAutoScalingGroup by deploy-bot at 02:14 UTC (exact resource match).\n   Fix: Check why the group scaled out and whether its scale-in policy and cooldown let it shrink.\n\nUntagged spend: $1.99 (4%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nAll causes matched a CloudTrail event."
+  },
+  {
+   "day": "2026-10-02",
+   "source": "template",
+   "facts_hash": "3a331be77873c310",
+   "headline": "Spend on Friday 02 October 2026 was $43.37, in line with the usual $43.46. No significant change.",
+   "digest_text": "AWS spend Friday 02 October 2026: $43.37 (in line with usual $43.46)\n\nSpend on Friday 02 October 2026 was $43.37, in line with the usual $43.46. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-10-01",
+   "source": "template",
+   "facts_hash": "09fc1ea043b1e989",
+   "headline": "Spend on Thursday 01 October 2026 was $44.03, in line with the usual $43.53. No significant change.",
+   "digest_text": "AWS spend Thursday 01 October 2026: $44.03 (in line with usual $43.53)\n\nSpend on Thursday 01 October 2026 was $44.03, in line with the usual $43.53. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nData notes: monthly fee lines are excluded from the comparison."
+  },
+  {
+   "day": "2026-09-30",
+   "source": "template",
+   "facts_hash": "404579922e857481",
+   "headline": "Spend on Wednesday 30 September 2026 was $43.58, in line with the usual $43.52. No significant change.",
+   "digest_text": "AWS spend Wednesday 30 September 2026: $43.58 (in line with usual $43.52)\n\nSpend on Wednesday 30 September 2026 was $43.58, in line with the usual $43.52. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-29",
+   "source": "template",
+   "facts_hash": "b2ef7773405edee3",
+   "headline": "Spend on Tuesday 29 September 2026 was $43.40, in line with the usual $43.57. No significant change.",
+   "digest_text": "AWS spend Tuesday 29 September 2026: $43.40 (in line with usual $43.57)\n\nSpend on Tuesday 29 September 2026 was $43.40, in line with the usual $43.57. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-28",
+   "source": "template",
+   "facts_hash": "dbb537e606ad610b",
+   "headline": "Spend on Monday 28 September 2026 was $43.35, in line with the usual $43.37. No significant change.",
+   "digest_text": "AWS spend Monday 28 September 2026: $43.35 (in line with usual $43.37)\n\nSpend on Monday 28 September 2026 was $43.35, in line with the usual $43.37. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-27",
+   "source": "template",
+   "facts_hash": "1a2f59d371151d88",
+   "headline": "Spend on Sunday 27 September 2026 was $36.76, in line with the usual $36.73. No significant change.",
+   "digest_text": "AWS spend Sunday 27 September 2026: $36.76 (in line with usual $36.73)\n\nSpend on Sunday 27 September 2026 was $36.76, in line with the usual $36.73. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-26",
+   "source": "template",
+   "facts_hash": "bf77edadd652142a",
+   "headline": "Spend on Saturday 26 September 2026 was $38.45, in line with the usual $38.89. No significant change.",
+   "digest_text": "AWS spend Saturday 26 September 2026: $38.45 (in line with usual $38.89)\n\nSpend on Saturday 26 September 2026 was $38.45, in line with the usual $38.89. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-25",
+   "source": "template",
+   "facts_hash": "67b9f4356cc3e125",
+   "headline": "Spend on Friday 25 September 2026 was $43.34, in line with the usual $43.62. No significant change.",
+   "digest_text": "AWS spend Friday 25 September 2026: $43.34 (in line with usual $43.62)\n\nSpend on Friday 25 September 2026 was $43.34, in line with the usual $43.62. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-24",
+   "source": "template",
+   "facts_hash": "4a16a70f52805e69",
+   "headline": "Spend on Thursday 24 September 2026 was $43.15, in line with the usual $43.70. No significant change.",
+   "digest_text": "AWS spend Thursday 24 September 2026: $43.15 (in line with usual $43.70)\n\nSpend on Thursday 24 September 2026 was $43.15, in line with the usual $43.70. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-23",
+   "source": "template",
+   "facts_hash": "901ee064495723c2",
+   "headline": "Spend on Wednesday 23 September 2026 was $43.56, in line with the usual $43.60. No significant change.",
+   "digest_text": "AWS spend Wednesday 23 September 2026: $43.56 (in line with usual $43.60)\n\nSpend on Wednesday 23 September 2026 was $43.56, in line with the usual $43.60. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-22",
+   "source": "template",
+   "facts_hash": "a2ff9d6e96a74cb3",
+   "headline": "Spend on Tuesday 22 September 2026 was $43.59, in line with the usual $43.49. No significant change.",
+   "digest_text": "AWS spend Tuesday 22 September 2026: $43.59 (in line with usual $43.49)\n\nSpend on Tuesday 22 September 2026 was $43.59, in line with the usual $43.49. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-21",
+   "source": "template",
+   "facts_hash": "c5887aa3d7d5f266",
+   "headline": "Spend on Monday 21 September 2026 was $43.54, in line with the usual $43.35. No significant change.",
+   "digest_text": "AWS spend Monday 21 September 2026: $43.54 (in line with usual $43.35)\n\nSpend on Monday 21 September 2026 was $43.54, in line with the usual $43.35. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-20",
+   "source": "template",
+   "facts_hash": "ec2055c34327fc91",
+   "headline": "Spend on Sunday 20 September 2026 was $36.90, in line with the usual $36.68. No significant change.",
+   "digest_text": "AWS spend Sunday 20 September 2026: $36.90 (in line with usual $36.68)\n\nSpend on Sunday 20 September 2026 was $36.90, in line with the usual $36.68. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-19",
+   "source": "template",
+   "facts_hash": "c41cdb6c0cbac182",
+   "headline": "Spend on Saturday 19 September 2026 was $38.86, in line with the usual $38.84. No significant change.",
+   "digest_text": "AWS spend Saturday 19 September 2026: $38.86 (in line with usual $38.84)\n\nSpend on Saturday 19 September 2026 was $38.86, in line with the usual $38.84. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-18",
+   "source": "template",
+   "facts_hash": "7b6f999d4f5a0b6a",
+   "headline": "Spend on Friday 18 September 2026 was $42.94, in line with the usual $43.62. No significant change.",
+   "digest_text": "AWS spend Friday 18 September 2026: $42.94 (in line with usual $43.62)\n\nSpend on Friday 18 September 2026 was $42.94, in line with the usual $43.62. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-17",
+   "source": "template",
+   "facts_hash": "4d26c2027aba8ddf",
+   "headline": "Spend on Thursday 17 September 2026 was $43.79, in line with the usual $43.55. No significant change.",
+   "digest_text": "AWS spend Thursday 17 September 2026: $43.79 (in line with usual $43.55)\n\nSpend on Thursday 17 September 2026 was $43.79, in line with the usual $43.55. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-16",
+   "source": "template",
+   "facts_hash": "23c4d2d638187105",
+   "headline": "Spend on Wednesday 16 September 2026 was $43.85, in line with the usual $43.53. No significant change.",
+   "digest_text": "AWS spend Wednesday 16 September 2026: $43.85 (in line with usual $43.53)\n\nSpend on Wednesday 16 September 2026 was $43.85, in line with the usual $43.53. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-15",
+   "source": "template",
+   "facts_hash": "e897ce14f6183fe8",
+   "headline": "Spend on Tuesday 15 September 2026 was $43.52, in line with the usual $43.43. No significant change.",
+   "digest_text": "AWS spend Tuesday 15 September 2026: $43.52 (in line with usual $43.43)\n\nSpend on Tuesday 15 September 2026 was $43.52, in line with the usual $43.43. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-14",
+   "source": "template",
+   "facts_hash": "a1c147af414b49e0",
+   "headline": "Spend on Monday 14 September 2026 was $43.24, in line with the usual $43.51. No significant change.",
+   "digest_text": "AWS spend Monday 14 September 2026: $43.24 (in line with usual $43.51)\n\nSpend on Monday 14 September 2026 was $43.24, in line with the usual $43.51. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-13",
+   "source": "template",
+   "facts_hash": "0b9e4a1e626a566f",
+   "headline": "Spend on Sunday 13 September 2026 was $36.77, in line with the usual $36.63. No significant change.",
+   "digest_text": "AWS spend Sunday 13 September 2026: $36.77 (in line with usual $36.63)\n\nSpend on Sunday 13 September 2026 was $36.77, in line with the usual $36.63. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-12",
+   "source": "template",
+   "facts_hash": "081d1f1ede4707de",
+   "headline": "Spend on Saturday 12 September 2026 was $38.74, in line with the usual $38.90. No significant change.",
+   "digest_text": "AWS spend Saturday 12 September 2026: $38.74 (in line with usual $38.90)\n\nSpend on Saturday 12 September 2026 was $38.74, in line with the usual $38.90. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-11",
+   "source": "template",
+   "facts_hash": "17fe2ebb6e14f6dc",
+   "headline": "Spend on Friday 11 September 2026 was $43.70, in line with the usual $43.62. No significant change.",
+   "digest_text": "AWS spend Friday 11 September 2026: $43.70 (in line with usual $43.62)\n\nSpend on Friday 11 September 2026 was $43.70, in line with the usual $43.62. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-10",
+   "source": "template",
+   "facts_hash": "98359b59acc121e6",
+   "headline": "Spend on Thursday 10 September 2026 was $43.22, in line with the usual $43.61. No significant change.",
+   "digest_text": "AWS spend Thursday 10 September 2026: $43.22 (in line with usual $43.61)\n\nSpend on Thursday 10 September 2026 was $43.22, in line with the usual $43.61. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-09",
+   "source": "template",
+   "facts_hash": "bac15962e98bc2d6",
+   "headline": "Spend on Wednesday 09 September 2026 was $43.34, in line with the usual $43.51. No significant change.",
+   "digest_text": "AWS spend Wednesday 09 September 2026: $43.34 (in line with usual $43.51)\n\nSpend on Wednesday 09 September 2026 was $43.34, in line with the usual $43.51. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-08",
+   "source": "template",
+   "facts_hash": "48825bfe6bc14e90",
+   "headline": "Spend on Tuesday 08 September 2026 was $42.53, in line with the usual $43.41. No significant change.",
+   "digest_text": "AWS spend Tuesday 08 September 2026: $42.53 (in line with usual $43.41)\n\nSpend on Tuesday 08 September 2026 was $42.53, in line with the usual $43.41. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  {
+   "day": "2026-09-07",
+   "source": "template",
+   "facts_hash": "9ce545d7bca64bad",
+   "headline": "Spend on Monday 07 September 2026 was $43.64, in line with the usual $43.49. No significant change.",
+   "digest_text": "AWS spend Monday 07 September 2026: $43.64 (in line with usual $43.49)\n\nSpend on Monday 07 September 2026 was $43.64, in line with the usual $43.49. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  }
+ ],
+ "waste": {
+  "findings": [
+   {
+    "rule": "unattached_ebs",
+    "resource_id": "vol-0a1b2c3d4e5f60718",
+    "status": "open",
+    "first_seen": "2026-09-07",
+    "last_seen": "2026-10-06",
+    "resolved_on": null,
+    "monthly_savings_cents": 4000,
+    "savings_source": "estimate",
+    "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+    "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718",
+    "evidence": {
+     "age_measured_from": "creation",
+     "size_gb": 500,
+     "unattached_days": 153
+    }
+   },
+   {
+    "rule": "unattached_ebs",
+    "resource_id": "vol-0f9e8d7c6b5a43210",
+    "status": "open",
+    "first_seen": "2026-09-07",
+    "last_seen": "2026-10-06",
+    "resolved_on": null,
+    "monthly_savings_cents": 960,
+    "savings_source": "estimate",
+    "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+    "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210",
+    "evidence": {
+     "age_measured_from": "creation",
+     "size_gb": 120,
+     "unattached_days": 153
+    }
+   },
+   {
+    "rule": "unattached_eip",
+    "resource_id": "eipalloc-0123456789abcdef0",
+    "status": "open",
+    "first_seen": "2026-09-07",
+    "last_seen": "2026-10-06",
+    "resolved_on": null,
+    "monthly_savings_cents": 365,
+    "savings_source": "estimate",
+    "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+    "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0",
+    "evidence": {
+     "public_ip": "13.233.10.20"
+    }
+   }
+  ],
+  "savings": {
+   "open_cents": 5325,
+   "saved_cents": 0,
+   "saved_estimated_cents": 0,
+   "dismissed_cents": 0,
+   "snoozed_cents": 0
+  }
+ },
+ "details": {
+  "2026-09-07": {
+   "facts": {
+    "schema": 1,
+    "day": "Monday 07 September 2026",
+    "total_spend": "$43.64",
+    "typical_spend": "$43.49",
+    "change": "+$0.15",
+    "change_pct": "0%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Monday 07 September 2026 was $43.64, in line with the usual $43.49. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "9ce545d7bca64bad"
+   },
+   "digest_text": "AWS spend Monday 07 September 2026: $43.64 (in line with usual $43.49)\n\nSpend on Monday 07 September 2026 was $43.64, in line with the usual $43.49. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-08": {
+   "facts": {
+    "schema": 1,
+    "day": "Tuesday 08 September 2026",
+    "total_spend": "$42.53",
+    "typical_spend": "$43.41",
+    "change": "-$0.88",
+    "change_pct": "2%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Tuesday 08 September 2026 was $42.53, in line with the usual $43.41. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "48825bfe6bc14e90"
+   },
+   "digest_text": "AWS spend Tuesday 08 September 2026: $42.53 (in line with usual $43.41)\n\nSpend on Tuesday 08 September 2026 was $42.53, in line with the usual $43.41. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-09": {
+   "facts": {
+    "schema": 1,
+    "day": "Wednesday 09 September 2026",
+    "total_spend": "$43.34",
+    "typical_spend": "$43.51",
+    "change": "-$0.17",
+    "change_pct": "0%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Wednesday 09 September 2026 was $43.34, in line with the usual $43.51. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "bac15962e98bc2d6"
+   },
+   "digest_text": "AWS spend Wednesday 09 September 2026: $43.34 (in line with usual $43.51)\n\nSpend on Wednesday 09 September 2026 was $43.34, in line with the usual $43.51. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-10": {
+   "facts": {
+    "schema": 1,
+    "day": "Thursday 10 September 2026",
+    "total_spend": "$43.22",
+    "typical_spend": "$43.61",
+    "change": "-$0.39",
+    "change_pct": "1%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Thursday 10 September 2026 was $43.22, in line with the usual $43.61. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "98359b59acc121e6"
+   },
+   "digest_text": "AWS spend Thursday 10 September 2026: $43.22 (in line with usual $43.61)\n\nSpend on Thursday 10 September 2026 was $43.22, in line with the usual $43.61. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-11": {
+   "facts": {
+    "schema": 1,
+    "day": "Friday 11 September 2026",
+    "total_spend": "$43.70",
+    "typical_spend": "$43.62",
+    "change": "+$0.08",
+    "change_pct": "0%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Friday 11 September 2026 was $43.70, in line with the usual $43.62. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "17fe2ebb6e14f6dc"
+   },
+   "digest_text": "AWS spend Friday 11 September 2026: $43.70 (in line with usual $43.62)\n\nSpend on Friday 11 September 2026 was $43.70, in line with the usual $43.62. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-12": {
+   "facts": {
+    "schema": 1,
+    "day": "Saturday 12 September 2026",
+    "total_spend": "$38.74",
+    "typical_spend": "$38.90",
+    "change": "-$0.16",
+    "change_pct": "0%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Saturday 12 September 2026 was $38.74, in line with the usual $38.90. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "081d1f1ede4707de"
+   },
+   "digest_text": "AWS spend Saturday 12 September 2026: $38.74 (in line with usual $38.90)\n\nSpend on Saturday 12 September 2026 was $38.74, in line with the usual $38.90. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-13": {
+   "facts": {
+    "schema": 1,
+    "day": "Sunday 13 September 2026",
+    "total_spend": "$36.77",
+    "typical_spend": "$36.63",
+    "change": "+$0.14",
+    "change_pct": "0%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Sunday 13 September 2026 was $36.77, in line with the usual $36.63. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "0b9e4a1e626a566f"
+   },
+   "digest_text": "AWS spend Sunday 13 September 2026: $36.77 (in line with usual $36.63)\n\nSpend on Sunday 13 September 2026 was $36.77, in line with the usual $36.63. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-14": {
+   "facts": {
+    "schema": 1,
+    "day": "Monday 14 September 2026",
+    "total_spend": "$43.24",
+    "typical_spend": "$43.51",
+    "change": "-$0.27",
+    "change_pct": "1%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Monday 14 September 2026 was $43.24, in line with the usual $43.51. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "a1c147af414b49e0"
+   },
+   "digest_text": "AWS spend Monday 14 September 2026: $43.24 (in line with usual $43.51)\n\nSpend on Monday 14 September 2026 was $43.24, in line with the usual $43.51. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-15": {
+   "facts": {
+    "schema": 1,
+    "day": "Tuesday 15 September 2026",
+    "total_spend": "$43.52",
+    "typical_spend": "$43.43",
+    "change": "+$0.09",
+    "change_pct": "0%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Tuesday 15 September 2026 was $43.52, in line with the usual $43.43. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "e897ce14f6183fe8"
+   },
+   "digest_text": "AWS spend Tuesday 15 September 2026: $43.52 (in line with usual $43.43)\n\nSpend on Tuesday 15 September 2026 was $43.52, in line with the usual $43.43. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-16": {
+   "facts": {
+    "schema": 1,
+    "day": "Wednesday 16 September 2026",
+    "total_spend": "$43.85",
+    "typical_spend": "$43.53",
+    "change": "+$0.32",
+    "change_pct": "1%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Wednesday 16 September 2026 was $43.85, in line with the usual $43.53. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "23c4d2d638187105"
+   },
+   "digest_text": "AWS spend Wednesday 16 September 2026: $43.85 (in line with usual $43.53)\n\nSpend on Wednesday 16 September 2026 was $43.85, in line with the usual $43.53. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-17": {
+   "facts": {
+    "schema": 1,
+    "day": "Thursday 17 September 2026",
+    "total_spend": "$43.79",
+    "typical_spend": "$43.55",
+    "change": "+$0.24",
+    "change_pct": "1%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Thursday 17 September 2026 was $43.79, in line with the usual $43.55. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "4d26c2027aba8ddf"
+   },
+   "digest_text": "AWS spend Thursday 17 September 2026: $43.79 (in line with usual $43.55)\n\nSpend on Thursday 17 September 2026 was $43.79, in line with the usual $43.55. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-18": {
+   "facts": {
+    "schema": 1,
+    "day": "Friday 18 September 2026",
+    "total_spend": "$42.94",
+    "typical_spend": "$43.62",
+    "change": "-$0.68",
+    "change_pct": "2%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Friday 18 September 2026 was $42.94, in line with the usual $43.62. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "7b6f999d4f5a0b6a"
+   },
+   "digest_text": "AWS spend Friday 18 September 2026: $42.94 (in line with usual $43.62)\n\nSpend on Friday 18 September 2026 was $42.94, in line with the usual $43.62. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-19": {
+   "facts": {
+    "schema": 1,
+    "day": "Saturday 19 September 2026",
+    "total_spend": "$38.86",
+    "typical_spend": "$38.84",
+    "change": "+$0.02",
+    "change_pct": "0%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Saturday 19 September 2026 was $38.86, in line with the usual $38.84. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "c41cdb6c0cbac182"
+   },
+   "digest_text": "AWS spend Saturday 19 September 2026: $38.86 (in line with usual $38.84)\n\nSpend on Saturday 19 September 2026 was $38.86, in line with the usual $38.84. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-20": {
+   "facts": {
+    "schema": 1,
+    "day": "Sunday 20 September 2026",
+    "total_spend": "$36.90",
+    "typical_spend": "$36.68",
+    "change": "+$0.22",
+    "change_pct": "1%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Sunday 20 September 2026 was $36.90, in line with the usual $36.68. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "ec2055c34327fc91"
+   },
+   "digest_text": "AWS spend Sunday 20 September 2026: $36.90 (in line with usual $36.68)\n\nSpend on Sunday 20 September 2026 was $36.90, in line with the usual $36.68. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-21": {
+   "facts": {
+    "schema": 1,
+    "day": "Monday 21 September 2026",
+    "total_spend": "$43.54",
+    "typical_spend": "$43.35",
+    "change": "+$0.19",
+    "change_pct": "0%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Monday 21 September 2026 was $43.54, in line with the usual $43.35. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "c5887aa3d7d5f266"
+   },
+   "digest_text": "AWS spend Monday 21 September 2026: $43.54 (in line with usual $43.35)\n\nSpend on Monday 21 September 2026 was $43.54, in line with the usual $43.35. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-22": {
+   "facts": {
+    "schema": 1,
+    "day": "Tuesday 22 September 2026",
+    "total_spend": "$43.59",
+    "typical_spend": "$43.49",
+    "change": "+$0.10",
+    "change_pct": "0%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Tuesday 22 September 2026 was $43.59, in line with the usual $43.49. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "a2ff9d6e96a74cb3"
+   },
+   "digest_text": "AWS spend Tuesday 22 September 2026: $43.59 (in line with usual $43.49)\n\nSpend on Tuesday 22 September 2026 was $43.59, in line with the usual $43.49. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-23": {
+   "facts": {
+    "schema": 1,
+    "day": "Wednesday 23 September 2026",
+    "total_spend": "$43.56",
+    "typical_spend": "$43.60",
+    "change": "-$0.04",
+    "change_pct": "0%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Wednesday 23 September 2026 was $43.56, in line with the usual $43.60. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "901ee064495723c2"
+   },
+   "digest_text": "AWS spend Wednesday 23 September 2026: $43.56 (in line with usual $43.60)\n\nSpend on Wednesday 23 September 2026 was $43.56, in line with the usual $43.60. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-24": {
+   "facts": {
+    "schema": 1,
+    "day": "Thursday 24 September 2026",
+    "total_spend": "$43.15",
+    "typical_spend": "$43.70",
+    "change": "-$0.55",
+    "change_pct": "1%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Thursday 24 September 2026 was $43.15, in line with the usual $43.70. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "4a16a70f52805e69"
+   },
+   "digest_text": "AWS spend Thursday 24 September 2026: $43.15 (in line with usual $43.70)\n\nSpend on Thursday 24 September 2026 was $43.15, in line with the usual $43.70. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-25": {
+   "facts": {
+    "schema": 1,
+    "day": "Friday 25 September 2026",
+    "total_spend": "$43.34",
+    "typical_spend": "$43.62",
+    "change": "-$0.28",
+    "change_pct": "1%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Friday 25 September 2026 was $43.34, in line with the usual $43.62. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "67b9f4356cc3e125"
+   },
+   "digest_text": "AWS spend Friday 25 September 2026: $43.34 (in line with usual $43.62)\n\nSpend on Friday 25 September 2026 was $43.34, in line with the usual $43.62. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-26": {
+   "facts": {
+    "schema": 1,
+    "day": "Saturday 26 September 2026",
+    "total_spend": "$38.45",
+    "typical_spend": "$38.89",
+    "change": "-$0.44",
+    "change_pct": "1%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Saturday 26 September 2026 was $38.45, in line with the usual $38.89. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "bf77edadd652142a"
+   },
+   "digest_text": "AWS spend Saturday 26 September 2026: $38.45 (in line with usual $38.89)\n\nSpend on Saturday 26 September 2026 was $38.45, in line with the usual $38.89. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-27": {
+   "facts": {
+    "schema": 1,
+    "day": "Sunday 27 September 2026",
+    "total_spend": "$36.76",
+    "typical_spend": "$36.73",
+    "change": "+$0.03",
+    "change_pct": "0%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Sunday 27 September 2026 was $36.76, in line with the usual $36.73. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "1a2f59d371151d88"
+   },
+   "digest_text": "AWS spend Sunday 27 September 2026: $36.76 (in line with usual $36.73)\n\nSpend on Sunday 27 September 2026 was $36.76, in line with the usual $36.73. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-28": {
+   "facts": {
+    "schema": 1,
+    "day": "Monday 28 September 2026",
+    "total_spend": "$43.35",
+    "typical_spend": "$43.37",
+    "change": "-$0.02",
+    "change_pct": "0%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Monday 28 September 2026 was $43.35, in line with the usual $43.37. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "dbb537e606ad610b"
+   },
+   "digest_text": "AWS spend Monday 28 September 2026: $43.35 (in line with usual $43.37)\n\nSpend on Monday 28 September 2026 was $43.35, in line with the usual $43.37. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-29": {
+   "facts": {
+    "schema": 1,
+    "day": "Tuesday 29 September 2026",
+    "total_spend": "$43.40",
+    "typical_spend": "$43.57",
+    "change": "-$0.17",
+    "change_pct": "0%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Tuesday 29 September 2026 was $43.40, in line with the usual $43.57. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "b2ef7773405edee3"
+   },
+   "digest_text": "AWS spend Tuesday 29 September 2026: $43.40 (in line with usual $43.57)\n\nSpend on Tuesday 29 September 2026 was $43.40, in line with the usual $43.57. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-09-30": {
+   "facts": {
+    "schema": 1,
+    "day": "Wednesday 30 September 2026",
+    "total_spend": "$43.58",
+    "typical_spend": "$43.52",
+    "change": "+$0.06",
+    "change_pct": "0%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Wednesday 30 September 2026 was $43.58, in line with the usual $43.52. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "404579922e857481"
+   },
+   "digest_text": "AWS spend Wednesday 30 September 2026: $43.58 (in line with usual $43.52)\n\nSpend on Wednesday 30 September 2026 was $43.58, in line with the usual $43.52. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-10-01": {
+   "facts": {
+    "schema": 1,
+    "day": "Thursday 01 October 2026",
+    "total_spend": "$44.03",
+    "typical_spend": "$43.53",
+    "change": "+$0.50",
+    "change_pct": "1%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": [
+     "monthly fee lines are excluded from the comparison"
+    ]
+   },
+   "explanation": {
+    "headline": "Spend on Thursday 01 October 2026 was $44.03, in line with the usual $43.53. No significant change.",
+    "causes": [],
+    "confidence_note": "Data notes: monthly fee lines are excluded from the comparison.",
+    "source": "template",
+    "facts_hash": "09fc1ea043b1e989"
+   },
+   "digest_text": "AWS spend Thursday 01 October 2026: $44.03 (in line with usual $43.53)\n\nSpend on Thursday 01 October 2026 was $44.03, in line with the usual $43.53. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nData notes: monthly fee lines are excluded from the comparison."
+  },
+  "2026-10-02": {
+   "facts": {
+    "schema": 1,
+    "day": "Friday 02 October 2026",
+    "total_spend": "$43.37",
+    "typical_spend": "$43.46",
+    "change": "-$0.09",
+    "change_pct": "0%",
+    "direction": "down",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": false,
+    "causes": [],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "5%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Friday 02 October 2026 was $43.37, in line with the usual $43.46. No significant change.",
+    "causes": [],
+    "confidence_note": "No caveats.",
+    "source": "template",
+    "facts_hash": "3a331be77873c310"
+   },
+   "digest_text": "AWS spend Friday 02 October 2026: $43.37 (in line with usual $43.46)\n\nSpend on Friday 02 October 2026 was $43.37, in line with the usual $43.46. No significant change.\n\nUntagged spend: $1.99 (5%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nNo caveats."
+  },
+  "2026-10-03": {
+   "facts": {
+    "schema": 1,
+    "day": "Saturday 03 October 2026",
+    "total_spend": "$50.64",
+    "typical_spend": "$38.79",
+    "change": "+$11.85",
+    "change_pct": "31%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": true,
+    "causes": [
+     {
+      "id": "c1",
+      "what": "AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend",
+      "change": "+$12.00",
+      "share_of_total_change": "101%",
+      "direction": "up",
+      "started": "2026-10-03",
+      "fix_hint": "check why the group scaled out and whether its scale-in policy and cooldown let it shrink",
+      "top_resources": [
+       "i-01f46536559314e23",
+       "i-6530a2c6a8835c4ab",
+       "i-6c52cf63c03378ec1"
+      ],
+      "volume_effect": "+$12.00",
+      "rate_effect": "$0.00",
+      "context": {
+       "event": "UpdateAutoScalingGroup",
+       "actor": "deploy-bot",
+       "time_utc": "02:14",
+       "confidence": "exact resource match"
+      }
+     }
+    ],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "4%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Saturday 03 October 2026 was $50.64, up $11.85 (31%) from the usual $38.79.",
+    "causes": [
+     {
+      "id": "c1",
+      "explanation": "AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend added $12.00 (101% of the change). UpdateAutoScalingGroup by deploy-bot at 02:14 UTC (exact resource match).",
+      "fix": "Check why the group scaled out and whether its scale-in policy and cooldown let it shrink."
+     }
+    ],
+    "confidence_note": "All causes matched a CloudTrail event.",
+    "source": "template",
+    "facts_hash": "4990cb4916bcdb50"
+   },
+   "digest_text": "AWS spend Saturday 03 October 2026: $50.64 (+$11.85, up 31% vs usual $38.79)\n\nSpend on Saturday 03 October 2026 was $50.64, up $11.85 (31%) from the usual $38.79.\n\n1. +$12.00 - AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend added $12.00 (101% of the change). UpdateAutoScalingGroup by deploy-bot at 02:14 UTC (exact resource match).\n   Fix: Check why the group scaled out and whether its scale-in policy and cooldown let it shrink.\n\nUntagged spend: $1.99 (4%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nAll causes matched a CloudTrail event."
+  },
+  "2026-10-04": {
+   "facts": {
+    "schema": 1,
+    "day": "Sunday 04 October 2026",
+    "total_spend": "$48.84",
+    "typical_spend": "$36.75",
+    "change": "+$12.09",
+    "change_pct": "33%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": true,
+    "causes": [
+     {
+      "id": "c1",
+      "what": "AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend",
+      "change": "+$12.00",
+      "share_of_total_change": "99%",
+      "direction": "up",
+      "started": "2026-10-03",
+      "fix_hint": "check why the group scaled out and whether its scale-in policy and cooldown let it shrink",
+      "top_resources": [
+       "i-01f46536559314e23",
+       "i-6530a2c6a8835c4ab",
+       "i-6c52cf63c03378ec1"
+      ],
+      "volume_effect": "+$12.00",
+      "rate_effect": "$0.00",
+      "context": {
+       "event": "UpdateAutoScalingGroup",
+       "actor": "deploy-bot",
+       "time_utc": "02:14",
+       "confidence": "exact resource match"
+      }
+     }
+    ],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "4%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Sunday 04 October 2026 was $48.84, up $12.09 (33%) from the usual $36.75.",
+    "causes": [
+     {
+      "id": "c1",
+      "explanation": "AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend added $12.00 (99% of the change). UpdateAutoScalingGroup by deploy-bot at 02:14 UTC (exact resource match).",
+      "fix": "Check why the group scaled out and whether its scale-in policy and cooldown let it shrink."
+     }
+    ],
+    "confidence_note": "All causes matched a CloudTrail event.",
+    "source": "template",
+    "facts_hash": "1169751a01d5cc31"
+   },
+   "digest_text": "AWS spend Sunday 04 October 2026: $48.84 (+$12.09, up 33% vs usual $36.75)\n\nSpend on Sunday 04 October 2026 was $48.84, up $12.09 (33%) from the usual $36.75.\n\n1. +$12.00 - AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend added $12.00 (99% of the change). UpdateAutoScalingGroup by deploy-bot at 02:14 UTC (exact resource match).\n   Fix: Check why the group scaled out and whether its scale-in policy and cooldown let it shrink.\n\nUntagged spend: $1.99 (4%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nAll causes matched a CloudTrail event."
+  },
+  "2026-10-05": {
+   "facts": {
+    "schema": 1,
+    "day": "Monday 05 October 2026",
+    "total_spend": "$55.23",
+    "typical_spend": "$43.39",
+    "change": "+$11.84",
+    "change_pct": "27%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": true,
+    "causes": [
+     {
+      "id": "c1",
+      "what": "AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend",
+      "change": "+$12.00",
+      "share_of_total_change": "101%",
+      "direction": "up",
+      "started": "2026-10-03",
+      "fix_hint": "check why the group scaled out and whether its scale-in policy and cooldown let it shrink",
+      "top_resources": [
+       "i-01f46536559314e23",
+       "i-6530a2c6a8835c4ab",
+       "i-6c52cf63c03378ec1"
+      ],
+      "volume_effect": "+$12.00",
+      "rate_effect": "$0.00",
+      "context": {
+       "event": "UpdateAutoScalingGroup",
+       "actor": "deploy-bot",
+       "time_utc": "02:14",
+       "confidence": "exact resource match"
+      }
+     }
+    ],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "4%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Monday 05 October 2026 was $55.23, up $11.84 (27%) from the usual $43.39.",
+    "causes": [
+     {
+      "id": "c1",
+      "explanation": "AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend added $12.00 (101% of the change). UpdateAutoScalingGroup by deploy-bot at 02:14 UTC (exact resource match).",
+      "fix": "Check why the group scaled out and whether its scale-in policy and cooldown let it shrink."
+     }
+    ],
+    "confidence_note": "All causes matched a CloudTrail event.",
+    "source": "template",
+    "facts_hash": "b523e776df088ae2"
+   },
+   "digest_text": "AWS spend Monday 05 October 2026: $55.23 (+$11.84, up 27% vs usual $43.39)\n\nSpend on Monday 05 October 2026 was $55.23, up $11.84 (27%) from the usual $43.39.\n\n1. +$12.00 - AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend added $12.00 (101% of the change). UpdateAutoScalingGroup by deploy-bot at 02:14 UTC (exact resource match).\n   Fix: Check why the group scaled out and whether its scale-in policy and cooldown let it shrink.\n\nUntagged spend: $1.99 (4%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nAll causes matched a CloudTrail event."
+  },
+  "2026-10-06": {
+   "facts": {
+    "schema": 1,
+    "day": "Tuesday 06 October 2026",
+    "total_spend": "$55.93",
+    "typical_spend": "$43.48",
+    "change": "+$12.45",
+    "change_pct": "29%",
+    "direction": "up",
+    "baseline_basis": "median of the same weekday over the previous weeks",
+    "significant_change": true,
+    "causes": [
+     {
+      "id": "c1",
+      "what": "AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend",
+      "change": "+$12.00",
+      "share_of_total_change": "96%",
+      "direction": "up",
+      "started": "2026-10-03",
+      "fix_hint": "check why the group scaled out and whether its scale-in policy and cooldown let it shrink",
+      "top_resources": [
+       "i-01f46536559314e23",
+       "i-6530a2c6a8835c4ab",
+       "i-6c52cf63c03378ec1"
+      ],
+      "volume_effect": "+$12.00",
+      "rate_effect": "$0.00",
+      "context": {
+       "event": "UpdateAutoScalingGroup",
+       "actor": "deploy-bot",
+       "time_utc": "02:14",
+       "confidence": "exact resource match"
+      }
+     }
+    ],
+    "untagged": {
+     "amount": "$1.99",
+     "share": "4%",
+     "resource_count": 1
+    },
+    "waste": {
+     "monthly_total": "$53.25",
+     "count": 3,
+     "top": [
+      {
+       "resource": "vol-0a1b2c3d4e5f60718",
+       "summary": "vol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days",
+       "monthly_saving": "$40.00",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0a1b2c3d4e5f60718  # then, once complete: aws ec2 delete-volume --volume-id vol-0a1b2c3d4e5f60718"
+      },
+      {
+       "resource": "vol-0f9e8d7c6b5a43210",
+       "summary": "vol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days",
+       "monthly_saving": "$9.60",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 create-snapshot --volume-id vol-0f9e8d7c6b5a43210  # then, once complete: aws ec2 delete-volume --volume-id vol-0f9e8d7c6b5a43210"
+      },
+      {
+       "resource": "eipalloc-0123456789abcdef0",
+       "summary": "Elastic IP 13.233.10.20 is not associated with anything",
+       "monthly_saving": "$3.65",
+       "saving_basis": "rough estimate",
+       "fix": "aws ec2 release-address --allocation-id eipalloc-0123456789abcdef0"
+      }
+     ]
+    },
+    "warnings": []
+   },
+   "explanation": {
+    "headline": "Spend on Tuesday 06 October 2026 was $55.93, up $12.45 (29%) from the usual $43.48.",
+    "causes": [
+     {
+      "id": "c1",
+      "explanation": "AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend added $12.00 (96% of the change). UpdateAutoScalingGroup by deploy-bot at 02:14 UTC (exact resource match).",
+      "fix": "Check why the group scaled out and whether its scale-in policy and cooldown let it shrink."
+     }
+    ],
+    "confidence_note": "All causes matched a CloudTrail event.",
+    "source": "template",
+    "facts_hash": "ef088d00e248efbd"
+   },
+   "digest_text": "AWS spend Tuesday 06 October 2026: $55.93 (+$12.45, up 29% vs usual $43.48)\n\nSpend on Tuesday 06 October 2026 was $55.93, up $12.45 (29%) from the usual $43.48.\n\n1. +$12.00 - AmazonEC2, usage type BoxUsage:m5.large, in Auto Scaling group api-prod-asg, team backend added $12.00 (96% of the change). UpdateAutoScalingGroup by deploy-bot at 02:14 UTC (exact resource match).\n   Fix: Check why the group scaled out and whether its scale-in policy and cooldown let it shrink.\n\nUntagged spend: $1.99 (4%), 1 resource missing the team tag\nWaste found: $53.25/month across 3 findings\nvol-0a1b2c3d4e5f60718 (500 GB) has been unattached for 153 days (saves $40.00/month, rough estimate)\nvol-0f9e8d7c6b5a43210 (120 GB) has been unattached for 153 days (saves $9.60/month, rough estimate)\nElastic IP 13.233.10.20 is not associated with anything (saves $3.65/month, rough estimate)\n\nAll causes matched a CloudTrail event."
+  }
+ }
+}
