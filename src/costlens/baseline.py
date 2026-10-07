@@ -63,9 +63,18 @@ def series_by(rows: Sequence[CostRow], dim: str) -> dict[str, dict[date, int]]:
 
 
 def compute_baseline(
-    series: dict[date, int], day: date, cfg: AnomalyConfig = DEFAULT_CONFIG
+    series: dict[date, int],
+    day: date,
+    cfg: AnomalyConfig = DEFAULT_CONFIG,
+    short_history_is_new: bool = False,
 ) -> Baseline | None:
-    """Baseline for `day` from the days before it. None if there is no history at all."""
+    """Baseline for `day` from the days before it.
+
+    Returns None when there is too little history to judge. With `short_history_is_new`
+    (used for per-service series) a subject first seen fewer than `min_trailing_points` days ago
+    is treated as new, with an expected spend of zero, so a service that appeared two days ago
+    is still reported instead of silently skipped.
+    """
     history = [d for d in series if d < day]
     if not history:
         return Baseline(0.0, cfg.mad_floor_cents, "new", 0, ())
@@ -90,6 +99,8 @@ def compute_baseline(
         ]
         method = "trailing"
         if len(same) < cfg.min_trailing_points:
+            if short_history_is_new and (day - first_seen).days < cfg.min_trailing_points:
+                return Baseline(0.0, cfg.mad_floor_cents, "new", 0, ())
             return None
     values = [v for _, v in same]
     med = float(median(values))
@@ -111,10 +122,14 @@ class Anomaly:
 
 
 def check_day(
-    subject: str, series: dict[date, int], day: date, cfg: AnomalyConfig = DEFAULT_CONFIG
+    subject: str,
+    series: dict[date, int],
+    day: date,
+    cfg: AnomalyConfig = DEFAULT_CONFIG,
+    short_history_is_new: bool = False,
 ) -> Anomaly | None:
     """Return an Anomaly if `day` is out of range for this series, else None."""
-    base = compute_baseline(series, day, cfg)
+    base = compute_baseline(series, day, cfg, short_history_is_new)
     if base is None:
         return None
     actual = series.get(day, 0)
@@ -138,7 +153,7 @@ def find_anomalies(
     if total:
         out.append(total)
     for service, series in series_by(rows, "service").items():
-        a = check_day(service, series, day, cfg)
+        a = check_day(service, series, day, cfg, short_history_is_new=True)
         if a:
             out.append(a)
     return sorted(out, key=lambda a: -abs(a.delta_cents))

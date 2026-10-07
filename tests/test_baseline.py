@@ -117,3 +117,22 @@ def test_config_thresholds_are_respected():
     series[END] = 12_000  # +20%
     assert check_day("total", series, END) is None
     assert check_day("total", series, END, AnomalyConfig(min_pct=0.1, min_abs_cents=100))
+
+
+def test_service_first_seen_two_days_ago_is_still_reported_as_new():
+    series = {END - timedelta(days=2): 700, END - timedelta(days=1): 700, END: 700}
+    assert check_day("AmazonES", series, END) is None  # total-style check: too little history
+    a = check_day("AmazonES", series, END, short_history_is_new=True)
+    assert a and a.method == "new" and a.expected_cents == 0 and a.delta_cents == 700
+
+
+def test_a_service_with_a_week_of_history_is_judged_normally_not_as_new():
+    series = {END - timedelta(days=k): 1_000 for k in range(1, 8)}
+    series[END] = 1_020
+    assert check_day("x", series, END, short_history_is_new=True) is None
+
+
+def test_persisting_new_service_is_found_days_after_it_appeared():
+    ds = generate(seed=0, incident="new_service", incident_age=2)
+    anomalies = find_anomalies(ds.rows, ds.last_day)
+    assert any(a.subject == "AmazonES" for a in anomalies)

@@ -11,6 +11,7 @@ Prices are rough and only need to be self-consistent; they are not a price list.
 from __future__ import annotations
 
 import random
+from collections.abc import Sequence
 from dataclasses import dataclass, field
 from datetime import UTC, date, datetime, time, timedelta
 
@@ -93,11 +94,13 @@ def _weekday_factor(d: date) -> float:
     return {5: 0.7, 6: 0.55}.get(d.weekday(), 1.0)
 
 
-def _base_rows(d: date, acct: _Account, rng: random.Random) -> list[CostRow]:
+def _base_rows(
+    d: date, acct: _Account, rng: random.Random, noise: float = 0.03
+) -> list[CostRow]:
     wf = _weekday_factor(d)
 
     def noisy(x: float) -> float:
-        return max(0.0, x * (1 + rng.gauss(0, 0.03)))
+        return max(0.0, x * (1 + rng.gauss(0, noise)))
 
     rows: list[CostRow] = []
     for iid in acct.asg_instances:
@@ -132,7 +135,14 @@ def _base_rows(d: date, acct: _Account, rng: random.Random) -> list[CostRow]:
 
 
 def _inject(
-    kind: str, start: date, last: date, acct: _Account, rng: random.Random, rows_by_day, events
+    kind: str,
+    start: date,
+    last: date,
+    acct: _Account,
+    rng: random.Random,
+    rows_by_day,
+    events,
+    scale: float = 1.0,
 ) -> Incident:
     iid = f"inc-{kind}-{start.isoformat()}"
     days = [start + timedelta(days=i) for i in range((last - start).days + 1)]
@@ -152,7 +162,7 @@ def _inject(
                 )
 
     if kind == "asg_scale_out":
-        new_ids = [f"i-{_hex(rng)}" for _ in range(5)]
+        new_ids = [f"i-{_hex(rng)}" for _ in range(max(1, round(5 * scale)))]
         for d in days:
             for nid in new_ids:
                 add(d, _row(d, EC2, "BoxUsage:m5.large", nid, 24, 10.0, asg=ASG_NAME))
@@ -162,14 +172,14 @@ def _inject(
     elif kind == "new_big_instance":
         big = f"i-{_hex(rng)}"
         for d in days:
-            add(d, _row(d, EC2, "BoxUsage:m5.4xlarge", big, 24, 80.0, team="ml"))
+            add(d, _row(d, EC2, "BoxUsage:m5.4xlarge", big, 24, 80.0 * scale, team="ml"))
         expected = {"service": EC2, "resource_id": big}
         driver, actor, event_name = "volume", "alice", "RunInstances"
         res = [{"ResourceType": "AWS::EC2::Instance", "ResourceName": big}]
     elif kind == "nat_traffic":
         for d in days:
             wf = _weekday_factor(d)
-            add(d, _row(d, EC2, "NatGateway-Bytes", NAT_ID, 150 * wf * 2, 5.6, team="platform"))
+            add(d, _row(d, EC2, "NatGateway-Bytes", NAT_ID, 150 * wf * 2 * scale, 5.6, team="platform"))
             # same key as the base row: the table builder merges them, tripling the traffic
         expected = {"service": EC2, "resource_id": NAT_ID, "usage_type": "NatGateway-Bytes"}
         driver, actor, event_name = "volume", None, None
@@ -179,7 +189,7 @@ def _inject(
             for i, r in enumerate(rows_by_day[d]):
                 if r.resource_id == RDS_ID:
                     rows_by_day[d][i] = _row(
-                        d, RDS, r.usage_type, RDS_ID, r.usage_qty, 38.0 * 2.5, team="data"
+                        d, RDS, r.usage_type, RDS_ID, r.usage_qty, 38.0 * (1 + 1.5 * scale), team="data"
                     )
         expected = {"service": RDS, "resource_id": RDS_ID}
         driver, actor, event_name = "rate", None, None
@@ -187,7 +197,7 @@ def _inject(
     elif kind == "new_service":
         domain = "arn:aws:es:ap-south-1:123456789012:domain/search-prod"
         for d in days:
-            add(d, _row(d, OPENSEARCH, "ESInstance:r5.large", domain, 48, 14.0, team="search"))
+            add(d, _row(d, OPENSEARCH, "ESInstance:r5.large", domain, 48 * scale, 14.0, team="search"))
         expected = {"service": OPENSEARCH}
         driver, actor, event_name = "volume", "carol", "CreateElasticsearchDomain"
         res = [{"ResourceType": "AWS::Elasticsearch::Domain", "ResourceName": domain}]
@@ -195,7 +205,7 @@ def _inject(
         victim = acct.asg_instances[0]
         for d in days:
             wf = _weekday_factor(d)
-            add(d, _row(d, EC2, "DataTransfer-Out-Bytes", victim, 20 * wf * 14, 9.0, asg=ASG_NAME))
+            add(d, _row(d, EC2, "DataTransfer-Out-Bytes", victim, 20 * wf * 14 * scale, 9.0, asg=ASG_NAME))
         expected = {"service": EC2, "usage_type": "DataTransfer-Out-Bytes", "resource_id": victim}
         driver, actor, event_name = "volume", None, None
         res = []
@@ -247,24 +257,29 @@ def generate(
     seed: int = 0,
     days: int = 90,
     end: date = date(2026, 10, 6),
-    incident: str | None = None,
+    incident: str | Sequence[str] | None = None,
     incident_age: int = 0,
+    noise: float = 0.03,
+    scale: float = 1.0,
 ) -> Dataset:
     """Build `days` days of cost data ending on `end`.
 
-    If `incident` is given it starts `incident_age` days before `end` and persists to `end`.
+    `incident` is one kind or several; each starts `incident_age` days before `end` and persists
+    to `end`. `noise` is the relative day-to-day variation of traffic-driven lines and `scale`
+    shrinks (<1) or grows (>1) the injected incident, so harder cases can be generated.
     """
     rng = random.Random(seed)
     acct = _Account(rng)
     first = end - timedelta(days=days - 1)
     all_days = [first + timedelta(days=i) for i in range(days)]
-    rows_by_day: dict[date, list[CostRow]] = {d: _base_rows(d, acct, rng) for d in all_days}
+    rows_by_day: dict[date, list[CostRow]] = {d: _base_rows(d, acct, rng, noise) for d in all_days}
     events: list[dict] = []
     incidents: list[Incident] = []
-    if incident:
+    kinds = [incident] if isinstance(incident, str) else list(incident or [])
+    for kind in kinds:
         start = end - timedelta(days=incident_age)
-        if start.day == 1:  # keep the incident off the monthly-fee day so the labels stay clean
+        if start.day == 1:  # keep incidents off the monthly-fee day so the labels stay clean
             start += timedelta(days=1) if incident_age > 0 else timedelta(0)
-        incidents.append(_inject(incident, start, end, acct, rng, rows_by_day, events))
+        incidents.append(_inject(kind, start, end, acct, rng, rows_by_day, events, scale))
     rows = [r for d in all_days for r in rows_by_day[d]]
     return Dataset(rows, sorted(events, key=lambda e: e["EventTime"]), incidents, first, end)
