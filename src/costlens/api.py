@@ -60,11 +60,8 @@ def create_app(
     @app.get("/api/trend")
     def trend(limit: int = 60) -> list[dict]:
         rows = state.list_days(max(1, min(limit, 400)))
-        return [
-            {"day": r["day"], "total_cents": r["total_cents"], "baseline_cents": r["baseline_cents"],
-             "significant": r["significant"]}
-            for r in reversed(rows)
-        ]  # fmt: skip
+        keys = ("day", "total_cents", "baseline_cents", "significant")
+        return [{k: r[k] for k in keys} for r in reversed(rows)]
 
     @app.get("/api/days/{day}")
     def one_day(day: str) -> dict:
