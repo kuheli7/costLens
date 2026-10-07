@@ -282,6 +282,48 @@ def digest(
     }
 
 
+# --------------------------------------------------------------------------- Slack buttons
+
+
+def interactions(event: dict[str, Any], cfg: Config, deps: Deps, signing_secret: str) -> dict:
+    """Lambda Function URL handler for Slack button clicks.
+
+    The Function URL is public, so the request is trusted only after Slack's signature (and
+    freshness) check passes; anything else gets 401 and changes nothing.
+    """
+    import base64
+    import time
+
+    from .slack import handle_interaction, parse_interaction_body, verify_signature
+
+    headers = {k.lower(): v for k, v in (event.get("headers") or {}).items()}
+    raw = event.get("body") or ""
+    body = base64.b64decode(raw) if event.get("isBase64Encoded") else raw.encode()
+    if not verify_signature(
+        signing_secret,
+        headers.get("x-slack-request-timestamp"),
+        body,
+        headers.get("x-slack-signature"),
+        now=deps.now().timestamp() if deps.now else time.time(),
+    ):
+        return {"statusCode": 401, "body": "bad signature"}
+    try:
+        payload = parse_interaction_body(body)
+    except (KeyError, ValueError):
+        return {"statusCode": 400, "body": "malformed payload"}
+    sync = S3StateSync(
+        deps.s3, cfg.bucket, cfg.state_key, os.path.join(tempfile.gettempdir(), "costlens.sqlite")
+    )
+    state = sync.pull()
+    response = handle_interaction(state, payload, deps.now())
+    sync.push(state)
+    return {
+        "statusCode": 200,
+        "headers": {"content-type": "application/json"},
+        "body": json.dumps(response),
+    }
+
+
 # --------------------------------------------------------------------------- Lambda glue
 
 
@@ -310,3 +352,9 @@ def lambda_digest(event, context):  # pragma: no cover - thin wrapper
         slack_secret_id=os.environ.get("COSTLENS_SLACK_SECRET"),
         llm_secret_id=os.environ.get("COSTLENS_LLM_SECRET"),
     )
+
+
+def lambda_interactions(event, context):  # pragma: no cover - thin wrapper
+    deps = _live_deps()
+    secret = _secret(deps, os.environ["COSTLENS_SLACK_SECRET"])["signing_secret"]
+    return interactions(event, Config.from_env(), deps, secret)

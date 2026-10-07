@@ -211,3 +211,46 @@ def test_config_from_environment():
     assert Config.from_env({"COSTLENS_BUCKET": "b"}).ai is False  # AI is off unless asked for
     with pytest.raises(KeyError):
         Config.from_env({})
+
+
+def _slack_event(payload, secret, ts, tamper=False, b64=False):
+    import base64
+    import urllib.parse
+
+    from costlens.slack import sign
+
+    body = urllib.parse.urlencode({"payload": json.dumps(payload)}).encode()
+    sig = sign(secret, str(ts), body)
+    if tamper:
+        body += b"&x=1"
+    return {
+        "headers": {"X-Slack-Request-Timestamp": str(ts), "X-Slack-Signature": sig},
+        "body": base64.b64encode(body).decode() if b64 else body.decode(),
+        "isBase64Encoded": b64,
+    }
+
+
+def test_slack_button_lambda_updates_the_synced_state_only_for_signed_requests(world, tmp_path):
+    from costlens.handlers import interactions
+    from costlens.slack import ACK_ACTION
+
+    s3, ds, _ = world
+    now = datetime(2026, 10, 7, 9, 0, tzinfo=UTC)
+    deps = Deps(s3=s3, now=lambda: now)
+    c = cfg()
+    payload = {
+        "user": {"username": "asha"},
+        "actions": [{"action_id": ACK_ACTION, "value": "cost:AmazonEC2"}],
+    }
+    ts = int(now.timestamp())
+
+    bad = interactions(_slack_event(payload, "secret", ts, tamper=True), c, deps, "secret")
+    stale = interactions(_slack_event(payload, "secret", ts - 4000), c, deps, "secret")
+    assert bad["statusCode"] == 401 and stale["statusCode"] == 401
+    sync = S3StateSync(s3, BUCKET, c.state_key, str(tmp_path / "s.sqlite"))
+    assert sync.pull().alert("cost:AmazonEC2") is None  # nothing changed
+
+    ok = interactions(_slack_event(payload, "secret", ts, b64=True), c, deps, "secret")
+    assert ok["statusCode"] == 200 and "Acknowledged by asha" in json.loads(ok["body"])["text"]
+    state = S3StateSync(s3, BUCKET, c.state_key, str(tmp_path / "s2.sqlite")).pull()
+    assert state.alert("cost:AmazonEC2")["status"] == "acked"
