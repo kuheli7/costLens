@@ -98,7 +98,7 @@ _STOP_RE = re.compile(r"\((\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}) GMT\)")
 
 
 def parse_stop_time(reason: str | None) -> datetime | None:
-    """EC2 puts the stop time in StateTransitionReason: 'User initiated (2026-09-01 10:00:00 GMT)'."""
+    """Read the stop time EC2 puts in StateTransitionReason, e.g. '... (2026-09-01 10:00:00 GMT)'."""
     m = _STOP_RE.search(reason or "")
     if not m:
         return None

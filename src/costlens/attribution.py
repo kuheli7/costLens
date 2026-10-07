@@ -304,7 +304,9 @@ def _make_node(
         scope=full_scope,
         delta_cents=delta,
         share=(delta / overall) if overall else 0.0,
-        before_cents=round_half_up(b),
+        # Derived from the rounded change so the printed numbers always reconcile exactly:
+        # before + delta == after, even when the fractional baseline rounds the other way.
+        before_cents=round_half_up(a) - delta,
         after_cents=round_half_up(a),
         split=split,
     )

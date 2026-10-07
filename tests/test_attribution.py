@@ -209,3 +209,18 @@ def test_drill_down_is_deterministic():
     a = drill_down(table_from_rows(base), table_from_rows(now))
     b = drill_down(table_from_rows(base), table_from_rows(now))
     assert [c.scope for c in a.causes()] == [c.scope for c in b.causes()]
+
+
+@settings(deadline=None, max_examples=100)
+@given(
+    st.lists(row_strategy, min_size=1, max_size=25), st.lists(row_strategy, min_size=1, max_size=25)
+)
+def test_printed_before_plus_change_always_equals_after(today_rows, base_rows):
+    root = drill_down(table_from_rows(base_rows), table_from_rows(today_rows))
+
+    def check(node):
+        assert node.before_cents + node.delta_cents == node.after_cents
+        for c in node.children:
+            check(c)
+
+    check(root)
