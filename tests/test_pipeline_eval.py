@@ -44,7 +44,9 @@ def test_acknowledged_alert_is_not_resent_but_the_digest_still_is():
     state = State()
     first = run_day(ds.rows, ds.last_day, cloudtrail=ds.cloudtrail, now=NOW, state=state)
     handle_interaction(
-        state, {"user": {"id": "U1"}, "actions": [{"action_id": ACK_ACTION, "value": first.alert_key}]}, NOW
+        state,
+        {"user": {"id": "U1"}, "actions": [{"action_id": ACK_ACTION, "value": first.alert_key}]},
+        NOW,
     )
     again = run_day(
         ds.rows, ds.last_day, cloudtrail=ds.cloudtrail, now=NOW + timedelta(hours=2), state=state

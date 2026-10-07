@@ -66,12 +66,21 @@ def test_status_change_needs_the_token(client):
     c, state, _ = client
     url = "/api/waste/unattached_ebs/vol-1/status"
     assert c.post(url, json={"status": "dismissed"}).status_code == 401
-    assert c.post(url, json={"status": "dismissed"}, headers={"Authorization": "Bearer nope"}).status_code == 401
+    assert (
+        c.post(
+            url, json={"status": "dismissed"}, headers={"Authorization": "Bearer nope"}
+        ).status_code
+        == 401
+    )
     ok = c.post(url, json={"status": "dismissed"}, headers={"Authorization": f"Bearer {TOKEN}"})
     assert ok.status_code == 200 and state.findings("dismissed")[0]["resource_id"] == "vol-1"
     bad = c.post(url, json={"status": "bogus"}, headers={"Authorization": f"Bearer {TOKEN}"})
     assert bad.status_code == 422
-    missing = c.post("/api/waste/x/y/status", json={"status": "fixed"}, headers={"Authorization": f"Bearer {TOKEN}"})
+    missing = c.post(
+        "/api/waste/x/y/status",
+        json={"status": "fixed"},
+        headers={"Authorization": f"Bearer {TOKEN}"},
+    )
     assert missing.status_code == 404
 
 
@@ -99,7 +108,10 @@ def slack_post(c, payload, secret=SECRET, ts=TS, tamper=False):
 
 def test_signed_slack_click_acknowledges_the_alert(client):
     c, state, _ = client
-    payload = {"user": {"username": "asha"}, "actions": [{"action_id": ACK_ACTION, "value": "cost:AmazonEC2"}]}
+    payload = {
+        "user": {"username": "asha"},
+        "actions": [{"action_id": ACK_ACTION, "value": "cost:AmazonEC2"}],
+    }
     r = slack_post(c, payload)
     assert r.status_code == 200 and "Acknowledged by asha" in r.json()["text"]
     assert state.alert("cost:AmazonEC2")["status"] == "acked"
@@ -112,7 +124,10 @@ def test_signed_slack_click_acknowledges_the_alert(client):
 )
 def test_unsigned_stale_or_tampered_slack_requests_are_rejected_and_change_nothing(client, kwargs):
     c, state, _ = client
-    payload = {"user": {"id": "U1"}, "actions": [{"action_id": ACK_ACTION, "value": "cost:AmazonEC2"}]}
+    payload = {
+        "user": {"id": "U1"},
+        "actions": [{"action_id": ACK_ACTION, "value": "cost:AmazonEC2"}],
+    }
     assert slack_post(c, payload, **kwargs).status_code == 401
     assert state.alert("cost:AmazonEC2") is None
 

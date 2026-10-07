@@ -6,8 +6,8 @@ Postgres unchanged apart from the placeholder style.
 
 from __future__ import annotations
 
-import json
 import functools
+import json
 import sqlite3
 import threading
 from collections.abc import Iterable
