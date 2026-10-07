@@ -7,7 +7,9 @@ Postgres unchanged apart from the placeholder style.
 from __future__ import annotations
 
 import json
+import functools
 import sqlite3
+import threading
 from collections.abc import Iterable
 from datetime import UTC, date, datetime, timedelta
 from typing import Any
@@ -65,11 +67,27 @@ def _iso(t: datetime) -> str:
     return t.astimezone(UTC).isoformat()
 
 
+def _synchronized(lock: threading.RLock, fn):
+    @functools.wraps(fn)
+    def wrapper(*args, **kwargs):
+        with lock:
+            return fn(*args, **kwargs)
+
+    return wrapper
+
+
 class State:
+    """SQLite-backed state. Safe to share across threads (a web server runs endpoints in a
+    thread pool): one connection, every public method serialised by a lock."""
+
     def __init__(self, path: str = ":memory:"):
-        self.db = sqlite3.connect(path)
+        self.db = sqlite3.connect(path, check_same_thread=False)
         self.db.row_factory = sqlite3.Row
         self.db.executescript(SCHEMA)
+        lock = threading.RLock()
+        for name in dir(type(self)):
+            if not name.startswith("_") and callable(getattr(type(self), name)):
+                setattr(self, name, _synchronized(lock, getattr(self, name)))
 
     def close(self) -> None:
         self.db.close()

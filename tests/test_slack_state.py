@@ -214,3 +214,23 @@ def test_dismissed_finding_stays_dismissed_when_seen_again():
     assert not s.set_finding_status("unattached_ebs", "nope", "dismissed")
     with pytest.raises(ValueError):
         s.set_finding_status("unattached_ebs", "a", "bogus")
+
+
+def test_state_can_be_shared_across_threads_without_losing_writes():
+    import threading
+
+    s = State()
+    errors = []
+
+    def work(n):
+        try:
+            for i in range(25):
+                s.set_alert(f"k{n}-{i}", "acked", "u", NOW)
+        except Exception as exc:  # pragma: no cover - the assertion below reports it
+            errors.append(exc)
+
+    threads = [threading.Thread(target=work, args=(n,)) for n in range(6)]
+    [t.start() for t in threads]
+    [t.join() for t in threads]
+    assert errors == []
+    assert s.db.execute("SELECT COUNT(*) FROM alerts").fetchone()[0] == 150
